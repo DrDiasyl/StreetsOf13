@@ -294,7 +294,7 @@
 	required_enemies = list(4,4,4,4,4,4,2,2,2,0)
 	required_candidates = 1
 	minimum_players = 25
-	weight = 2
+	weight = 0
 	cost = 10
 	required_type = /mob/living/silicon/ai
 	blocking_rules = list(/datum/dynamic_ruleset/roundstart/malf_ai)
@@ -344,7 +344,7 @@
 	ruleset_category = parent_type::ruleset_category |  RULESET_CATEGORY_NO_WITTING_CREW_ANTAGONISTS
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
-	weight = 1
+	weight = 0
 	cost = 10
 	requirements = REQUIREMENTS_VERY_HIGH_THREAT_NEEDED
 	flags = HIGH_IMPACT_RULESET
@@ -382,7 +382,7 @@
 	)
 	required_enemies = list(3,3,3,3,3,2,1,1,0,0)
 	required_candidates = 5
-	weight = 5
+	weight = 0
 	cost = 7
 	minimum_round_time = 70 MINUTES
 	requirements = REQUIREMENTS_VERY_HIGH_THREAT_NEEDED
@@ -429,7 +429,7 @@
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
 	minimum_round_time = 35 MINUTES
-	weight = 3
+	weight = 0
 	cost = 8
 	minimum_players = 25
 	repeatable = TRUE
@@ -462,7 +462,7 @@
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
 	minimum_round_time = 35 MINUTES
-	weight = 3
+	weight = 0
 	cost = 10
 	minimum_players = 25
 	repeatable = TRUE
@@ -502,7 +502,7 @@
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
 	minimum_round_time = 40 MINUTES
-	weight = 5
+	weight = 0
 	cost = 10
 	minimum_players = 25
 	repeatable = TRUE
@@ -550,7 +550,7 @@
 	ruleset_category = parent_type::ruleset_category |  RULESET_CATEGORY_NO_WITTING_CREW_ANTAGONISTS
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
-	weight = 3
+	weight = 0
 	cost = 5
 	minimum_players = 15
 	repeatable = TRUE
@@ -586,7 +586,7 @@
 	ruleset_category = parent_type::ruleset_category |  RULESET_CATEGORY_NO_WITTING_CREW_ANTAGONISTS
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
-	weight = 4
+	weight = 0
 	cost = 7
 	minimum_players = 25
 	repeatable = TRUE
@@ -627,7 +627,7 @@
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 2
 	required_applicants = 2
-	weight = 4
+	weight = 0
 	cost = 7
 	minimum_players = 25
 	repeatable = TRUE
@@ -664,7 +664,7 @@
 	ruleset_category = parent_type::ruleset_category |  RULESET_CATEGORY_NO_WITTING_CREW_ANTAGONISTS
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
-	weight = 4
+	weight = 0
 	cost = 8
 	minimum_players = 30
 	repeatable = TRUE
@@ -705,7 +705,7 @@
 	required_type = /mob/dead/observer
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 0
-	weight = 3
+	weight = 0
 	cost = 8
 	minimum_players = 27
 	repeatable = TRUE
@@ -724,7 +724,7 @@
 	antag_flag = ROLE_REVENANT
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
-	weight = 4
+	weight = 0
 	cost = 5
 	minimum_players = 15
 	repeatable = TRUE
@@ -775,7 +775,7 @@
 	required_type = /mob/dead/observer
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 0
-	weight = 3
+	weight = 0
 	cost = 8
 	minimum_players = 20
 	repeatable = TRUE
@@ -798,7 +798,7 @@
 	required_type = /mob/dead/observer
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 0
-	weight = 3
+	weight = 0
 	cost = 8
 	minimum_players = 25
 	repeatable = TRUE
@@ -826,7 +826,7 @@
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
-	weight = 4
+	weight = 0
 	cost = 3 // Doesn't have the same impact on rounds as revenants, dragons, sentient disease (10) or syndicate infiltrators (5).
 	repeatable = TRUE
 
@@ -866,7 +866,7 @@
 	required_type = /mob/dead/observer
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
-	weight = 3
+	weight = 0
 	cost = 7
 	minimum_players = 15
 	repeatable = TRUE
@@ -893,7 +893,7 @@
 	)
 	required_enemies = list(2, 2, 1, 1, 1, 1, 1, 0, 0, 0)
 	required_candidates = 1
-	weight = 4
+	weight = 0
 	cost = 3
 	repeatable = TRUE
 	signup_item_path = /obj/effect/bluespace_stream

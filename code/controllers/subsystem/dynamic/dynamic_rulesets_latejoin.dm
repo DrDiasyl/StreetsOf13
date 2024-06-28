@@ -117,7 +117,7 @@
 	requirements = list(101,101,70,40,30,20,20,20,20,20)
 	flags = HIGH_IMPACT_RULESET
 	blocking_rules = list(/datum/dynamic_ruleset/roundstart/revs)
-	var/required_heads_of_staff = 3
+	var/required_heads_of_staff = 1
 	var/finished = FALSE
 	var/datum/team/revolution/revolution
 
@@ -199,7 +199,7 @@
 		JOB_CYBORG,
 	)
 	required_candidates = 1
-	weight = 8
+	weight = 0
 	cost = 6
 	requirements = list(101,101,50,10,10,10,10,10,10,10)
 	repeatable = TRUE
@@ -241,7 +241,7 @@
 		JOB_CYBORG,
 	)
 	required_candidates = 1
-	weight = 2
+	weight = 0
 	cost = 12
 	requirements = list(101,101,60,50,40,20,20,10,10,10)
 	repeatable = TRUE

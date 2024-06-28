@@ -56,7 +56,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 	minimum_required_age = 14
 	exclusive_roles = list(JOB_AI)
 	required_candidates = 1
-	weight = 3
+	weight = 0
 	cost = 18
 	requirements = list(101,101,101,80,60,50,30,20,10,10)
 	antag_cap = 1
@@ -111,7 +111,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		JOB_AI,
 		JOB_CYBORG,
 	)
-	weight = 5
+	weight = 0
 	cost = 8
 	scaling_cost = 15
 	requirements = list(40,30,30,20,20,15,15,15,10,10)
@@ -162,7 +162,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		JOB_CYBORG,
 	)
 	required_candidates = 1
-	weight = 3
+	weight = 0
 	cost = 16
 	scaling_cost = 10
 	requirements = list(70,70,60,50,40,20,20,10,10,10)
@@ -210,7 +210,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		JOB_CYBORG,
 	)
 	required_candidates = 1
-	weight = 3
+	weight = 0
 	cost = 10
 	scaling_cost = 9
 	requirements = list(101,101,60,30,30,25,20,15,10,10)
@@ -262,7 +262,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		JOB_HEAD_OF_SECURITY,
 	) // Just to be sure that a wizard getting picked won't ever imply a Captain or HoS not getting drafted
 	required_candidates = 1
-	weight = 2
+	weight = 0
 	cost = 20
 	requirements = list(90,90,90,80,60,40,30,20,10,10)
 	ruleset_lazy_templates = list(LAZY_TEMPLATE_KEY_WIZARDDEN)
@@ -331,7 +331,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		JOB_WARDEN,
 	)
 	required_candidates = 2
-	weight = 3
+	weight = 0
 	cost = 20
 	requirements = list(100,90,80,60,40,30,10,10,10,10)
 	flags = HIGH_IMPACT_RULESET
@@ -405,7 +405,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		JOB_HEAD_OF_SECURITY,
 	) // Just to be sure that a nukie getting picked won't ever imply a Captain or HoS not getting drafted
 	required_candidates = 5
-	weight = 3
+	weight = 0
 	cost = 20
 	requirements = list(90,90,90,80,60,40,30,20,10,10)
 	flags = HIGH_IMPACT_RULESET
@@ -482,7 +482,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 
 //////////////////////////////////////////////
 //                                          //
-//               REVS                       //
+//           REVS - the main guys           //
 //                                          //
 //////////////////////////////////////////////
 
@@ -509,15 +509,13 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		JOB_WARDEN,
 	)
 	required_candidates = 3
-	weight = 3
+	weight = 9
 	delay = 7 MINUTES
 	cost = 20
 	requirements = list(101,101,70,40,30,20,10,10,10,10)
 	antag_cap = 3
 	flags = HIGH_IMPACT_RULESET
 	blocking_rules = list(/datum/dynamic_ruleset/latejoin/provocateur)
-	// I give up, just there should be enough heads with 35 players...
-	minimum_players = 35
 	var/datum/team/revolution/revolution
 	var/finished = FALSE
 
@@ -716,7 +714,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		JOB_CYBORG,
 	)
 	required_candidates = 3 // lives or dies by there being a few spies
-	weight = 5
+	weight = 0
 	cost = 8
 	scaling_cost = 4
 	minimum_players = 10
