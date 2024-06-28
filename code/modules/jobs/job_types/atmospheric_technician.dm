@@ -1,11 +1,11 @@
 /datum/job/atmospheric_technician
-	title = JOB_ATMOSPHERIC_TECHNICIAN
+	title = JOB_FIREFIGHTER
 	description = "Ensure the air is breathable on the station, fill oxygen tanks, fight fires, purify the air."
-	department_head = list(JOB_CHIEF_ENGINEER)
+	department_head = list(JOB_FOREMAN)
 	faction = FACTION_STATION
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = SUPERVISOR_CE
+	supervisors = SUPERVISOR_FOREMAN
 	exp_requirements = 60
 	exp_required_type = EXP_TYPE_CREW
 	exp_granted_type = EXP_TYPE_CREW
@@ -19,7 +19,7 @@
 
 	liver_traits = list(TRAIT_ENGINEER_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_ATMOSPHERIC_TECHNICIAN
+	display_order = JOB_DISPLAY_ORDER_FIREFIGHTER
 	bounty_types = CIV_JOB_ATMOS
 	departments_list = list(
 		/datum/job_department/engineering,

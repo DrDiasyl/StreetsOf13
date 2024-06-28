@@ -22,7 +22,7 @@
 	item = /obj/item/storage/box/syndie_kit/mail_counterfeit
 	cost = 2
 	illegal_tech = FALSE
-	restricted_roles = list(JOB_CARGO_TECHNICIAN, JOB_QUARTERMASTER)
+	restricted_roles = list(JOB_LOGISTIC_TECHNICIAN, JOB_LOGISTIC_MANAGER)
 	surplus = 5
 
 /datum/uplink_item/role_restricted/bureaucratic_error
@@ -33,7 +33,7 @@
 	limited_stock = 1
 	cost = 2
 	restricted = TRUE
-	restricted_roles = list(JOB_HEAD_OF_PERSONNEL, JOB_QUARTERMASTER)
+	restricted_roles = list(JOB_CHIEF_OF_INTERNAL_AFFAIRS, JOB_LOGISTIC_MANAGER)
 
 /datum/uplink_item/role_restricted/bureaucratic_error/spawn_item(spawn_path, mob/user, datum/uplink_handler/uplink_handler, atom/movable/source)
 	force_event(/datum/round_event_control/bureaucratic_error, "a syndicate virus")
@@ -53,7 +53,7 @@
 	desc = "A tattered old jumpsuit that will provide absolutely no benefit to you."
 	item = /obj/item/clothing/under/color/grey/ancient
 	cost = 20
-	restricted_roles = list(JOB_ASSISTANT)
+	restricted_roles = list(JOB_UNEMPLOYED)
 	surplus = 0
 
 /datum/uplink_item/role_restricted/oldtoolboxclean
@@ -61,7 +61,7 @@
 	desc = "An iconic toolbox design notorious with Assistants everywhere, this design was especially made to become more robust the more telecrystals it has inside it! Tools and insulated gloves included."
 	item = /obj/item/storage/toolbox/mechanical/old/clean
 	cost = 2
-	restricted_roles = list(JOB_ASSISTANT)
+	restricted_roles = list(JOB_UNEMPLOYED)
 	surplus = 0
 
 /datum/uplink_item/role_restricted/clownpin
@@ -96,7 +96,7 @@
 			The only way to get rid of it if you are holding it is to attack someone else with it, causing it to latch to that person instead."
 	item = /obj/item/hot_potato/syndicate
 	cost = 4
-	restricted_roles = list(JOB_COOK, JOB_BOTANIST, JOB_CLOWN, JOB_MIME)
+	restricted_roles = list(JOB_COOK, JOB_FARMER, JOB_CLOWN, JOB_MIME)
 
 /datum/uplink_item/role_restricted/combat_baking
 	name = "Combat Bakery Kit"
@@ -114,7 +114,7 @@
 	item = /obj/item/storage/box/syndie_kit/ez_clean
 	cost = 6
 	surplus = 20
-	restricted_roles = list(JOB_JANITOR)
+	restricted_roles = list(JOB_STREET_CLEANER)
 
 /datum/uplink_item/role_restricted/reverse_bear_trap
 	name = "Reverse Bear Trap"
@@ -144,14 +144,14 @@
 	desc = "A disposable sentry gun deployment system cleverly disguised as a toolbox, apply wrench for functionality."
 	item = /obj/item/storage/toolbox/emergency/turret
 	cost = 11
-	restricted_roles = list(JOB_STATION_ENGINEER, JOB_CHIEF_ENGINEER)
+	restricted_roles = list(JOB_CONSTRUCTION_WORKER, JOB_FOREMAN)
 
 /datum/uplink_item/role_restricted/rebarxbowsyndie
 	name = "Syndicate Rebar Crossbow"
 	desc = "A much more proffessional version of the engineer's bootleg rebar crossbow. 3 shot mag, quicker loading, and better ammo. Owners manual included."
 	item = /obj/item/storage/box/syndie_kit/rebarxbowsyndie
 	cost = 10
-	restricted_roles = list(JOB_STATION_ENGINEER, JOB_CHIEF_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
+	restricted_roles = list(JOB_CONSTRUCTION_WORKER, JOB_FOREMAN, JOB_FIREFIGHTER)
 
 /datum/uplink_item/role_restricted/magillitis_serum
 	name = "Magillitis Serum Autoinjector"
@@ -247,7 +247,7 @@
 	progression_minimum = 15 MINUTES
 	item = /obj/item/gun/chem
 	cost = 12
-	restricted_roles = list(JOB_CHEMIST, JOB_CHIEF_MEDICAL_OFFICER, JOB_BOTANIST)
+	restricted_roles = list(JOB_CHEMIST, JOB_CHIEF_MEDICAL_OFFICER, JOB_FARMER)
 
 /datum/uplink_item/role_restricted/pie_cannon
 	name = "Banana Cream Pie Cannon"
@@ -304,7 +304,7 @@
 	item = /obj/item/his_grace
 	cost = 20
 	surplus = 0
-	restricted_roles = list(JOB_CHAPLAIN)
+	restricted_roles = list(JOB_PRIEST)
 	purchasable_from = ~UPLINK_SPY
 
 /datum/uplink_item/role_restricted/concealed_weapon_bay
@@ -348,14 +348,14 @@
 	desc = "A rare seed we have recovered that grows into a dangerous species that will aid you with your tasks!"
 	item = /obj/item/seeds/seedling/evil
 	cost = 8
-	restricted_roles = list(JOB_BOTANIST)
+	restricted_roles = list(JOB_FARMER)
 
 /datum/uplink_item/role_restricted/bee_smoker
 	name = "Bee Smoker"
 	desc = "A device that runs on cannabis, turning it into a gas that can hypnotize bees to follow our commands."
 	item = /obj/item/bee_smoker
 	cost = 4
-	restricted_roles = list(JOB_BOTANIST)
+	restricted_roles = list(JOB_FARMER)
 
 /datum/uplink_item/role_restricted/monkey_agent
 	name = "Simian Agent Reinforcements"
@@ -364,7 +364,7 @@
 		Please note that these are free-range monkeys that don't react with Mutadone."
 	item = /obj/item/antag_spawner/loadout/monkey_man
 	cost = 6
-	restricted_roles = list(JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_GENETICIST, JOB_ASSISTANT, JOB_MIME, JOB_CLOWN)
+	restricted_roles = list(JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_GENETICIST, JOB_UNEMPLOYED, JOB_MIME, JOB_CLOWN)
 	restricted = TRUE
 	refundable = TRUE
 
@@ -375,7 +375,7 @@
 	item = /obj/item/storage/toolbox/guncase/monkeycase
 	cost = 4
 	limited_stock = 3
-	restricted_roles = list(JOB_ASSISTANT, JOB_MIME, JOB_CLOWN)
+	restricted_roles = list(JOB_UNEMPLOYED, JOB_MIME, JOB_CLOWN)
 	restricted = TRUE
 	refundable = FALSE
 

@@ -1,9 +1,9 @@
 /datum/job/security_officer
-	title = JOB_SECURITY_OFFICER
+	title = JOB_POLICE_OFFICER
 	description = "Protect company assets, follow the Standard Operating \
 		Procedure, eat donuts."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
-	department_head = list(JOB_HEAD_OF_SECURITY)
+	department_head = list(JOB_CHIEF_OF_POLICE)
 	faction = FACTION_STATION
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
@@ -39,10 +39,10 @@
 	)
 	rpg_title = "Guard"
 	alternate_titles = list(
-		JOB_SECURITY_OFFICER_MEDICAL,
-		JOB_SECURITY_OFFICER_ENGINEERING,
-		JOB_SECURITY_OFFICER_SUPPLY,
-		JOB_SECURITY_OFFICER_SCIENCE,
+		JOB_POLICE_OFFICER_MEDICAL,
+		JOB_POLICE_OFFICER_ENGINEERING,
+		JOB_POLICE_OFFICER_SUPPLY,
+		JOB_POLICE_OFFICER_SCIENCE,
 	)
 	job_flags = STATION_JOB_FLAGS
 

@@ -1,15 +1,15 @@
 /datum/job/quartermaster
-	title = JOB_QUARTERMASTER
+	title = JOB_LOGISTIC_MANAGER
 	description = "Coordinate cargo technicians and shaft miners, assist with \
 		economical purchasing."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
-	department_head = list(JOB_CAPTAIN)
+	department_head = list(JOB_MAYOR)
 	head_announce = list(RADIO_CHANNEL_SUPPLY)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
 	minimal_player_age = 7
-	supervisors = SUPERVISOR_CAPTAIN
+	supervisors = SUPERVISOR_MAYOR
 	exp_required_type_department = EXP_TYPE_SUPPLY
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "QUARTERMASTER"
@@ -23,7 +23,7 @@
 	mind_traits = list(HEAD_OF_STAFF_MIND_TRAITS)
 	liver_traits = list(TRAIT_ROYAL_METABOLISM) // finally upgraded
 
-	display_order = JOB_DISPLAY_ORDER_QUARTERMASTER
+	display_order = JOB_DISPLAY_ORDER_LOGISTIC_MANAGER
 	bounty_types = CIV_JOB_RANDOM
 	departments_list = list(
 		/datum/job_department/cargo,

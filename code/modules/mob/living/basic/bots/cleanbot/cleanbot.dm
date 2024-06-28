@@ -35,26 +35,26 @@
 	var/obj/item/mop/our_mop
 	///list of our officer titles
 	var/static/list/officers_titles = list(
-		JOB_CAPTAIN,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
+		JOB_MAYOR,
+		JOB_CHIEF_OF_INTERNAL_AFFAIRS,
+		JOB_CHIEF_OF_POLICE,
 		JOB_RESEARCH_DIRECTOR,
 	)
 	///job titles we can get
 	var/static/list/job_titles = list(
-		JOB_CAPTAIN = "Cpt.",
+		JOB_MAYOR = "Cpt.",
 
-		JOB_HEAD_OF_PERSONNEL = "Lt.",
+		JOB_CHIEF_OF_INTERNAL_AFFAIRS = "Lt.",
 		JOB_LAWYER = "Esq.",
 
-		JOB_HEAD_OF_SECURITY = "Maj.",
+		JOB_CHIEF_OF_POLICE = "Maj.",
 		JOB_WARDEN = "Sgt.",
 		JOB_DETECTIVE = "Det.",
-		JOB_SECURITY_OFFICER = "Officer",
+		JOB_POLICE_OFFICER = "Officer",
 
-		JOB_CHIEF_ENGINEER = "Chief Engineer",
-		JOB_STATION_ENGINEER = "Engineer",
-		JOB_ATMOSPHERIC_TECHNICIAN = "Technician",
+		JOB_FOREMAN = "Chief Engineer",
+		JOB_CONSTRUCTION_WORKER = "Engineer",
+		JOB_FIREFIGHTER = "Technician",
 
 		JOB_CHIEF_MEDICAL_OFFICER = "C.M.O.",
 		JOB_MEDICAL_DOCTOR = "M.D.",

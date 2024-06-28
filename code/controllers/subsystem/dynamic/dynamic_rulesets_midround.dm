@@ -234,12 +234,12 @@
 	antag_flag = ROLE_SLEEPER_AGENT
 	antag_flag_override = ROLE_TRAITOR
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_INTERNAL_AFFAIRS,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -283,11 +283,11 @@
 	antag_flag_override = ROLE_MALF
 	enemy_roles = list(
 		JOB_CHEMIST,
-		JOB_CHIEF_ENGINEER,
-		JOB_HEAD_OF_SECURITY,
+		JOB_FOREMAN,
+		JOB_CHIEF_OF_POLICE,
 		JOB_RESEARCH_DIRECTOR,
 		JOB_SCIENTIST,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	exclusive_roles = list(JOB_AI)
@@ -374,10 +374,10 @@
 	enemy_roles = list(
 		JOB_AI,
 		JOB_CYBORG,
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	required_enemies = list(3,3,3,3,3,2,1,1,0,0)
@@ -447,11 +447,11 @@
 	antag_flag_override = ROLE_BLOB
 	ruleset_category = parent_type::ruleset_category |  RULESET_CATEGORY_NO_WITTING_CREW_ANTAGONISTS
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -885,10 +885,10 @@
 	antag_flag = ROLE_PARADOX_CLONE
 	ruleset_category = parent_type::ruleset_category |  RULESET_CATEGORY_NO_WITTING_CREW_ANTAGONISTS
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	required_enemies = list(2, 2, 1, 1, 1, 1, 1, 0, 0, 0)

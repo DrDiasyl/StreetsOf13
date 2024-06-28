@@ -154,19 +154,19 @@ SUBSYSTEM_DEF(id_access)
 	sub_department_managers_tgui = list(
 		"[ACCESS_CAPTAIN]" = list(
 			"regions" = list(REGION_COMMAND),
-			"head" = JOB_CAPTAIN,
+			"head" = JOB_MAYOR,
 			"templates" = list(),
 			"pdas" = list(),
 		),
 		"[ACCESS_HOP]" = list(
 			"regions" = list(REGION_GENERAL),
-			"head" = JOB_HEAD_OF_PERSONNEL,
+			"head" = JOB_CHIEF_OF_INTERNAL_AFFAIRS,
 			"templates" = list(),
 			"pdas" = list(),
 		),
 		"[ACCESS_HOS]" = list(
 			"regions" = list(REGION_SECURITY),
-			"head" = JOB_HEAD_OF_SECURITY,
+			"head" = JOB_CHIEF_OF_POLICE,
 			"templates" = list(),
 			"pdas" = list(),
 		),
@@ -184,13 +184,13 @@ SUBSYSTEM_DEF(id_access)
 		),
 		"[ACCESS_CE]" = list(
 			"regions" = list(REGION_ENGINEERING),
-			"head" = JOB_CHIEF_ENGINEER,
+			"head" = JOB_FOREMAN,
 			"templates" = list(),
 			"pdas" = list(),
 		),
 		"[ACCESS_QM]" = list(
 			"regions" = list(REGION_SUPPLY),
-			"head" = JOB_QUARTERMASTER,
+			"head" = JOB_LOGISTIC_MANAGER,
 			"templates" = list(),
 			"pdas" = list(),
 		),

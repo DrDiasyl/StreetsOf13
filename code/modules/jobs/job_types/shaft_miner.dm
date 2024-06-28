@@ -2,11 +2,11 @@
 	title = JOB_SHAFT_MINER
 	description = "Travel to strange lands. Mine ores. \
 		Meet strange creatures. Kill them for their gold."
-	department_head = list(JOB_QUARTERMASTER)
+	department_head = list(JOB_LOGISTIC_MANAGER)
 	faction = FACTION_STATION
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = SUPERVISOR_QM
+	supervisors = SUPERVISOR_LM
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "SHAFT_MINER"
 

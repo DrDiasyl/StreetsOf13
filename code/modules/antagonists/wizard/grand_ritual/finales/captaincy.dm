@@ -32,7 +32,7 @@
 			other_crew += crewmate
 
 	dress_candidate(invoker)
-	GLOB.manifest.modify(invoker.real_name, JOB_CAPTAIN, JOB_CAPTAIN)
+	GLOB.manifest.modify(invoker.real_name, JOB_MAYOR, JOB_MAYOR)
 	minor_announce("Captain [invoker.real_name] on deck!")
 
 	// Enlist some crew to try and restore the natural order
@@ -56,7 +56,7 @@
 	else
 		former_captain.equipOutfit(/datum/outfit/job/assistant)
 
-	GLOB.manifest.modify(former_captain.real_name, JOB_ASSISTANT, JOB_ASSISTANT)
+	GLOB.manifest.modify(former_captain.real_name, JOB_UNEMPLOYED, JOB_UNEMPLOYED)
 	var/list/valid_turfs = list()
 	// Used to be into prison but that felt a bit too mean
 	for (var/turf/exile_turf as anything in get_area_turfs(/area/station/maintenance, subtypes = TRUE))

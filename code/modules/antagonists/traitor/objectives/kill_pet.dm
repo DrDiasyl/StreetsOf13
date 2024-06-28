@@ -18,14 +18,14 @@
 
 	/// Possible heads mapped to their pet type. Can be a list of possible pets
 	var/list/possible_heads = list(
-		JOB_HEAD_OF_PERSONNEL = list(
+		JOB_CHIEF_OF_INTERNAL_AFFAIRS = list(
 			/mob/living/basic/pet/dog/corgi/ian,
 			/mob/living/basic/pet/dog/corgi/puppy/ian
 		),
-		JOB_CAPTAIN = /mob/living/basic/pet/fox/renault,
+		JOB_MAYOR = /mob/living/basic/pet/fox/renault,
 		JOB_CHIEF_MEDICAL_OFFICER = /mob/living/basic/pet/cat/runtime,
-		JOB_CHIEF_ENGINEER = /mob/living/basic/parrot/poly,
-		JOB_QUARTERMASTER = list(
+		JOB_FOREMAN = /mob/living/basic/parrot/poly,
+		JOB_LOGISTIC_MANAGER = list(
 			/mob/living/basic/gorilla/cargorilla,
 			/mob/living/basic/sloth/citrus,
 			/mob/living/basic/sloth/paperwork,
@@ -52,7 +52,7 @@
 
 	limited_to_department_head = FALSE
 	possible_heads = list(
-		JOB_HEAD_OF_SECURITY = list(
+		JOB_CHIEF_OF_POLICE = list(
 			/mob/living/basic/carp/pet/lia,
 			/mob/living/basic/spider/giant/sgt_araneus,
 			/mob/living/basic/bear/snow/misha,

@@ -1,11 +1,11 @@
 /datum/job/clown
 	title = JOB_CLOWN
 	description = "Entertain the crew, make bad jokes, go on a holy quest to find bananium, HONK!"
-	department_head = list(JOB_HEAD_OF_PERSONNEL)
+	department_head = list(JOB_CHIEF_OF_INTERNAL_AFFAIRS)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_COIA
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "CLOWN"
 

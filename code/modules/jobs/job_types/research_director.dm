@@ -4,12 +4,12 @@
 		order, make sure the AI and its Cyborgs aren't rogue, replacing them if \
 		they are."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
-	department_head = list(JOB_CAPTAIN)
+	department_head = list(JOB_MAYOR)
 	head_announce = list("Science")
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = SUPERVISOR_CAPTAIN
+	supervisors = SUPERVISOR_MAYOR
 	req_admin_notify = 1
 	minimal_player_age = 7
 	exp_required_type_department = EXP_TYPE_SCIENCE

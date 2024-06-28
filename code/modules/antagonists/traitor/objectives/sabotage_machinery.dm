@@ -68,7 +68,7 @@ GLOBAL_DATUM_INIT(objective_machine_handler, /datum/objective_target_machine_han
 	progression_minimum = 15 MINUTES
 
 	applicable_jobs = list(
-		JOB_STATION_ENGINEER = /obj/machinery/telecomms/hub,
+		JOB_CONSTRUCTION_WORKER = /obj/machinery/telecomms/hub,
 		JOB_SCIENTIST = /obj/machinery/rnd/server,
 	)
 
@@ -85,10 +85,10 @@ GLOBAL_DATUM_INIT(objective_machine_handler, /datum/objective_target_machine_han
 
 	maximum_allowed = 2
 	applicable_jobs = list(
-		JOB_CHIEF_ENGINEER = /obj/machinery/rnd/production/protolathe/department/engineering,
+		JOB_FOREMAN = /obj/machinery/rnd/production/protolathe/department/engineering,
 		JOB_CHIEF_MEDICAL_OFFICER = /obj/machinery/rnd/production/techfab/department/medical,
-		JOB_HEAD_OF_PERSONNEL = /obj/machinery/rnd/production/techfab/department/service,
-		JOB_QUARTERMASTER = /obj/machinery/rnd/production/techfab/department/cargo,
+		JOB_CHIEF_OF_INTERNAL_AFFAIRS = /obj/machinery/rnd/production/techfab/department/service,
+		JOB_LOGISTIC_MANAGER = /obj/machinery/rnd/production/techfab/department/cargo,
 		JOB_RESEARCH_DIRECTOR = /obj/machinery/rnd/production/protolathe/department/science,
 		JOB_SHAFT_MINER = /obj/machinery/mineral/ore_redemption,
 	)

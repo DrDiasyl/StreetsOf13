@@ -1,14 +1,14 @@
 /datum/job/head_of_personnel
-	title = JOB_HEAD_OF_PERSONNEL
+	title = JOB_CHIEF_OF_INTERNAL_AFFAIRS
 	description = "Alter access on ID cards, manage the service department, \
 		protect Ian, run the station when the captain dies."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
-	department_head = list(JOB_CAPTAIN)
+	department_head = list(JOB_MAYOR)
 	head_announce = list(RADIO_CHANNEL_SERVICE)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = SUPERVISOR_CAPTAIN
+	supervisors = SUPERVISOR_MAYOR
 	req_admin_notify = 1
 	minimal_player_age = 10
 	exp_requirements = 180
@@ -31,7 +31,7 @@
 	mind_traits = list(HEAD_OF_STAFF_MIND_TRAITS)
 	liver_traits = list(TRAIT_ROYAL_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_HEAD_OF_PERSONNEL
+	display_order = JOB_DISPLAY_ORDER_CHIEF_OF_INTERNAL_AFFAIRS
 
 	mail_goodies = list(
 		/obj/item/card/id/advanced/silver = 10,

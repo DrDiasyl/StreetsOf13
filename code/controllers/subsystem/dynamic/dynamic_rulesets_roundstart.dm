@@ -12,11 +12,11 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 	antag_datum = /datum/antagonist/traitor
 	minimum_required_age = 0
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -100,11 +100,11 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 	antag_flag = ROLE_BROTHER
 	antag_datum = /datum/antagonist/brother
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -150,11 +150,11 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 	antag_flag = ROLE_CHANGELING
 	antag_datum = /datum/antagonist/changeling
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -198,11 +198,11 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 	antag_flag = ROLE_HERETIC
 	antag_datum = /datum/antagonist/heretic
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -258,8 +258,8 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 	flags = HIGH_IMPACT_RULESET
 	minimum_required_age = 14
 	restricted_roles = list(
-		JOB_CAPTAIN,
-		JOB_HEAD_OF_SECURITY,
+		JOB_MAYOR,
+		JOB_CHIEF_OF_POLICE,
 	) // Just to be sure that a wizard getting picked won't ever imply a Captain or HoS not getting drafted
 	required_candidates = 1
 	weight = 0
@@ -320,14 +320,14 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 	minimum_required_age = 14
 	restricted_roles = list(
 		JOB_AI,
-		JOB_CAPTAIN,
-		JOB_CHAPLAIN,
+		JOB_MAYOR,
+		JOB_PRIEST,
 		JOB_CYBORG,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_INTERNAL_AFFAIRS,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	required_candidates = 2
@@ -401,8 +401,8 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 	var/datum/antagonist/antag_leader_datum = /datum/antagonist/nukeop/leader
 	minimum_required_age = 14
 	restricted_roles = list(
-		JOB_CAPTAIN,
-		JOB_HEAD_OF_SECURITY,
+		JOB_MAYOR,
+		JOB_CHIEF_OF_POLICE,
 	) // Just to be sure that a nukie getting picked won't ever imply a Captain or HoS not getting drafted
 	required_candidates = 5
 	weight = 0
@@ -495,17 +495,17 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 	minimum_required_age = 14
 	restricted_roles = list(
 		JOB_AI,
-		JOB_CAPTAIN,
-		JOB_CHIEF_ENGINEER,
+		JOB_MAYOR,
+		JOB_FOREMAN,
 		JOB_CHIEF_MEDICAL_OFFICER,
 		JOB_CYBORG,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_INTERNAL_AFFAIRS,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_QUARTERMASTER,
+		JOB_LOGISTIC_MANAGER,
 		JOB_RESEARCH_DIRECTOR,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	required_candidates = 3
@@ -701,12 +701,12 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 	antag_datum = /datum/antagonist/spy
 	minimum_required_age = 0
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_PERSONNEL, // AA = bad
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_INTERNAL_AFFAIRS, // AA = bad
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(

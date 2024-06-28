@@ -1,14 +1,14 @@
 /datum/job/head_of_security
-	title = JOB_HEAD_OF_SECURITY
+	title = JOB_CHIEF_OF_POLICE
 	description = "Coordinate security personnel, ensure they are not corrupt, \
 		make sure every department is protected."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
-	department_head = list(JOB_CAPTAIN)
+	department_head = list(JOB_MAYOR)
 	head_announce = list(RADIO_CHANNEL_SECURITY)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = SUPERVISOR_CAPTAIN
+	supervisors = SUPERVISOR_MAYOR
 	req_admin_notify = 1
 	minimal_player_age = 14
 	exp_requirements = 300
@@ -30,7 +30,7 @@
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SEC
 
-	display_order = JOB_DISPLAY_ORDER_HEAD_OF_SECURITY
+	display_order = JOB_DISPLAY_ORDER_CHIEF_OF_POLICE
 	bounty_types = CIV_JOB_SEC
 
 	family_heirlooms = list(/obj/item/book/manual/wiki/security_space_law)

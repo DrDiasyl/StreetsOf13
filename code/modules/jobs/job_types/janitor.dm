@@ -1,11 +1,11 @@
 /datum/job/janitor
-	title = JOB_JANITOR
+	title = JOB_STREET_CLEANER
 	description = "Clean up trash and blood. Replace broken lights. Slip people over."
-	department_head = list(JOB_HEAD_OF_PERSONNEL)
+	department_head = list(JOB_CHIEF_OF_INTERNAL_AFFAIRS)
 	faction = FACTION_STATION
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_COIA
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "JANITOR"
 
@@ -15,7 +15,7 @@
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
 
-	display_order = JOB_DISPLAY_ORDER_JANITOR
+	display_order = JOB_DISPLAY_ORDER_STREET_CLEANER
 	departments_list = list(
 		/datum/job_department/service,
 		)

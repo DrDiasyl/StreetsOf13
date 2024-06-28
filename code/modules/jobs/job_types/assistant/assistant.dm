@@ -4,7 +4,7 @@ GLOBAL_DATUM(colored_assistant, /datum/colored_assistant)
 Assistant
 */
 /datum/job/assistant
-	title = JOB_ASSISTANT
+	title = JOB_UNEMPLOYED
 	description = "Get your space legs, assist people, ask the HoP to give you a job."
 	faction = FACTION_STATION
 	total_positions = 5
@@ -16,7 +16,7 @@ Assistant
 	paycheck = PAYCHECK_LOWER // Get a job. Job reassignment changes your paycheck now. Get over it.
 
 	paycheck_department = ACCOUNT_CIV
-	display_order = JOB_DISPLAY_ORDER_ASSISTANT
+	display_order = JOB_DISPLAY_ORDER_UNEMPLOYED
 
 	liver_traits = list(TRAIT_MAINTENANCE_METABOLISM)
 
@@ -51,7 +51,7 @@ Assistant
 	return pick_weight(gimmicks)
 
 /datum/outfit/job/assistant
-	name = JOB_ASSISTANT
+	name = JOB_UNEMPLOYED
 	jobtype = /datum/job/assistant
 	id_trim = /datum/id_trim/job/assistant
 	belt = /obj/item/modular_computer/pda/assistant

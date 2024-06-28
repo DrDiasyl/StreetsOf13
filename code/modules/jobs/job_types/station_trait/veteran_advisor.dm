@@ -3,11 +3,11 @@
 	description = "Advise HoS, and Captain on matters of Security. Train green Officers. \
 		Lay back in your wheelchair and say \"I told you\" to the HoS when all of the station collapses."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
-	department_head = list(JOB_HEAD_OF_SECURITY)
+	department_head = list(JOB_CHIEF_OF_POLICE)
 	faction = FACTION_STATION
 	total_positions = 0
 	spawn_positions = 0
-	supervisors = SUPERVISOR_HOS
+	supervisors = SUPERVISOR_COP
 	minimal_player_age = 7
 	exp_requirements = 6000 //100 HOURS! We want really hard boiled people
 	exp_required_type = EXP_TYPE_CREW

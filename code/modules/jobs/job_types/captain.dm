@@ -1,5 +1,5 @@
 /datum/job/captain
-	title = JOB_CAPTAIN
+	title = JOB_MAYOR
 	description = "Be responsible for the station, manage your Heads of Staff, \
 		keep the crew alive, be prepared to do anything and everything or die \
 		horribly trying."
@@ -26,7 +26,7 @@
 	mind_traits = list(HEAD_OF_STAFF_MIND_TRAITS)
 	liver_traits = list(TRAIT_ROYAL_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_CAPTAIN
+	display_order = JOB_DISPLAY_ORDER_MAYOR
 	department_for_prefs = /datum/job_department/captain
 	departments_list = list(
 		/datum/job_department/command,
@@ -93,7 +93,7 @@
 
 /datum/outfit/job/captain/pre_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
-	special_charter = CHECK_MAP_JOB_CHANGE(JOB_CAPTAIN, "special_charter")
+	special_charter = CHECK_MAP_JOB_CHANGE(JOB_MAYOR, "special_charter")
 	if(!special_charter)
 		return
 

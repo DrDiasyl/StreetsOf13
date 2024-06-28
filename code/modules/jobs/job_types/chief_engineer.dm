@@ -1,14 +1,14 @@
 /datum/job/chief_engineer
-	title = JOB_CHIEF_ENGINEER
+	title = JOB_FOREMAN
 	description = "Coordinate engineering, ensure equipment doesn't get stolen, \
 		make sure the Supermatter doesn't blow up, maintain telecommunications."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
-	department_head = list(JOB_CAPTAIN)
+	department_head = list(JOB_MAYOR)
 	head_announce = list("Engineering")
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = SUPERVISOR_CAPTAIN
+	supervisors = SUPERVISOR_MAYOR
 	req_admin_notify = 1
 	minimal_player_age = 7
 	exp_requirements = 180
@@ -30,7 +30,7 @@
 	mind_traits = list(HEAD_OF_STAFF_MIND_TRAITS)
 	liver_traits = list(TRAIT_ENGINEER_METABOLISM, TRAIT_ROYAL_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_CHIEF_ENGINEER
+	display_order = JOB_DISPLAY_ORDER_FOREMAN
 	bounty_types = CIV_JOB_ENG
 
 	family_heirlooms = list(/obj/item/clothing/head/utility/hardhat/white, /obj/item/screwdriver, /obj/item/wrench, /obj/item/weldingtool, /obj/item/crowbar, /obj/item/wirecutters)

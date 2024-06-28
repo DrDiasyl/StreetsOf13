@@ -1,13 +1,13 @@
 /datum/job/cargo_technician
-	title = JOB_CARGO_TECHNICIAN
+	title = JOB_LOGISTIC_TECHNICIAN
 	description = "Distribute supplies to the departments that ordered them, \
 		collect empty crates, load and unload the supply shuttle, \
 		ship bounty cubes."
-	department_head = list(JOB_QUARTERMASTER)
+	department_head = list(JOB_LOGISTIC_MANAGER)
 	faction = FACTION_STATION
 	total_positions = 5
 	spawn_positions = 3
-	supervisors = SUPERVISOR_QM
+	supervisors = SUPERVISOR_LM
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "CARGO_TECHNICIAN"
 
@@ -16,7 +16,7 @@
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_CAR
-	display_order = JOB_DISPLAY_ORDER_CARGO_TECHNICIAN
+	display_order = JOB_DISPLAY_ORDER_LOGISTIC_TECHNICIAN
 	bounty_types = CIV_JOB_RANDOM
 	departments_list = list(
 		/datum/job_department/cargo,

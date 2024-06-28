@@ -1,12 +1,12 @@
 /datum/job/station_engineer
-	title = JOB_STATION_ENGINEER
+	title = JOB_CONSTRUCTION_WORKER
 	description = "Start the Supermatter, wire the solars, repair station hull \
 		and wiring damage."
-	department_head = list(JOB_CHIEF_ENGINEER)
+	department_head = list(JOB_FOREMAN)
 	faction = FACTION_STATION
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = SUPERVISOR_CE
+	supervisors = SUPERVISOR_FOREMAN
 	exp_requirements = 60
 	exp_required_type = EXP_TYPE_CREW
 	exp_granted_type = EXP_TYPE_CREW
@@ -20,7 +20,7 @@
 
 	liver_traits = list(TRAIT_ENGINEER_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_STATION_ENGINEER
+	display_order = JOB_DISPLAY_ORDER_CONSTRUCTION_WORKER
 	bounty_types = CIV_JOB_ENG
 	departments_list = list(
 		/datum/job_department/engineering,

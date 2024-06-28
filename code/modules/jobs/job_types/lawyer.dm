@@ -2,11 +2,11 @@
 	title = JOB_LAWYER
 	description = "Advocate for prisoners, create law-binding contracts, \
 		ensure Security is following protocol and Space Law."
-	department_head = list(JOB_HEAD_OF_PERSONNEL)
+	department_head = list(JOB_CHIEF_OF_INTERNAL_AFFAIRS)
 	faction = FACTION_STATION
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_COIA
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "LAWYER"
 

@@ -2,11 +2,11 @@
 	title = JOB_CURATOR
 	description = "Read and write books and hand them to people, stock \
 		bookshelves, report on station news."
-	department_head = list(JOB_HEAD_OF_PERSONNEL)
+	department_head = list(JOB_CHIEF_OF_INTERNAL_AFFAIRS)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_COIA
 	config_tag = "CURATOR"
 	exp_granted_type = EXP_TYPE_CREW
 

@@ -126,7 +126,7 @@
 	var/static/list/trait_obsessions = list(
 		JOB_MIME = TRAIT_MIME_FAN,
 		JOB_CLOWN = TRAIT_CLOWN_ENJOYER,
-		JOB_CHAPLAIN = TRAIT_SPIRITUAL,
+		JOB_PRIEST = TRAIT_SPIRITUAL,
 	) // Jobs and their corresponding quirks
 	var/list/special_pool = list() //The special list, for quirk-based
 	var/chosen_victim  //The obsession target
