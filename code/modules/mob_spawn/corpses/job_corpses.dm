@@ -17,7 +17,7 @@
 	icon_state = "corpsedoctor"
 
 /obj/effect/mob_spawn/corpse/human/geneticist
-	name = JOB_GENETICIST
+	name = "Geneticist"
 	outfit = /datum/outfit/job/geneticist
 	icon_state = "corpsescientist"
 
@@ -30,17 +30,17 @@
 	outfit = /datum/outfit/job/engineer/mod
 
 /obj/effect/mob_spawn/corpse/human/clown
-	name = JOB_CLOWN
+	name = "Clown"
 	outfit = /datum/outfit/job/clown
 	icon_state = "corpseclown"
 
 /obj/effect/mob_spawn/corpse/human/scientist
-	name = JOB_SCIENTIST
+	name = "Scientist"
 	outfit = /datum/outfit/job/scientist
 	icon_state = "corpsescientist"
 
 /obj/effect/mob_spawn/corpse/human/miner
-	name = JOB_SHAFT_MINER
+	name = "Shaft Miner"
 	outfit = /datum/outfit/job/miner
 	icon_state = "corpseminer"
 
@@ -80,11 +80,11 @@
 	outfit = /datum/outfit/job/prisoner
 
 /obj/effect/mob_spawn/corpse/human/roboticist
-	name = JOB_ROBOTICIST
+	name = "Roboticist"
 	outfit = /datum/outfit/job/roboticist
 	icon_state = "corpseroboticist"
 
 /obj/effect/mob_spawn/corpse/human/bitrunner
-	name = JOB_BITRUNNER
+	name = "Bitrunner"
 	outfit = /datum/outfit/job/bitrunner
 	icon_state = "corpsecargotech"

@@ -1,4 +1,4 @@
-/datum/job/geneticist
+/* /datum/job/geneticist
 	title = JOB_GENETICIST
 	description = "Alter genomes, turn monkeys into humans (and vice-versa), and make DNA backups."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
@@ -30,13 +30,11 @@
 	family_heirlooms = list(/obj/item/clothing/under/shorts/purple)
 	rpg_title = "Genemancer"
 	job_flags = STATION_JOB_FLAGS
-
+*/
 
 /datum/outfit/job/geneticist
 	name = "Geneticist"
-	jobtype = /datum/job/geneticist
 
-	id_trim = /datum/id_trim/job/geneticist
 	uniform = /obj/item/clothing/under/rank/rnd/geneticist
 	suit = /obj/item/clothing/suit/toggle/labcoat/genetics
 	suit_store = /obj/item/flashlight/pen

@@ -120,7 +120,7 @@
 	department_type = /datum/job_department/engineering
 
 /obj/machinery/modular_computer/preset/cargochat/science
-	department_type = /datum/job_department/science
+	department_type = /datum/job_department/medical
 
 /obj/machinery/modular_computer/preset/cargochat/security
 	department_type = /datum/job_department/security

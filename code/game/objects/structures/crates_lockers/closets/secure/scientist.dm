@@ -1,6 +1,5 @@
 /obj/structure/closet/secure_closet/research_director
 	name = "research director's locker"
-	req_access = list(ACCESS_RD)
 	icon_state = "rd"
 
 /obj/structure/closet/secure_closet/research_director/PopulateContents()

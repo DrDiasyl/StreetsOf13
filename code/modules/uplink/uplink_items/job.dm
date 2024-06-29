@@ -44,7 +44,6 @@
 	desc = "Inject yourself with this to become as clumsy as a clown... or inject someone ELSE with it to make THEM as clumsy as a clown. Useful for clowns who wish to reconnect with their former clownish nature or for clowns who wish to torment and play with their prey before killing them."
 	item = /obj/item/dnainjector/clumsymut
 	cost = 1
-	restricted_roles = list(JOB_CLOWN)
 	illegal_tech = FALSE
 	surplus = 25
 
@@ -69,7 +68,6 @@
 	desc = "A firing pin that, when inserted into a gun, makes that gun only usable by clowns and clumsy people and makes that gun honk whenever anyone tries to fire it."
 	cost = 4
 	item = /obj/item/firing_pin/clown/ultra
-	restricted_roles = list(JOB_CLOWN)
 	illegal_tech = FALSE
 	surplus = 25
 
@@ -78,7 +76,6 @@
 	desc = "Like the ultra hilarious firing pin, except the gun you insert this pin into explodes when someone who isn't clumsy or a clown tries to fire it."
 	cost = 7
 	item = /obj/item/firing_pin/clown/ultra/selfdestruct
-	restricted_roles = list(JOB_CLOWN)
 	illegal_tech = FALSE
 	surplus = 25
 
@@ -87,7 +84,7 @@
 	desc = "An MMI modified to give cyborgs laws to serve the Syndicate without having their interface damaged by Cryptographic Sequencers, this will not unlock their hidden modules."
 	item = /obj/item/mmi/syndie
 	cost = 2
-	restricted_roles = list(JOB_ROBOTICIST, JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_CORONER, JOB_MEDICAL_DOCTOR, JOB_CHIEF_MEDICAL_OFFICER)
+	restricted_roles = list(JOB_CORONER, JOB_MEDICAL_DOCTOR, JOB_CHIEF_MEDICAL_OFFICER)
 	surplus = 0
 
 /datum/uplink_item/role_restricted/explosive_hot_potato
@@ -96,7 +93,7 @@
 			The only way to get rid of it if you are holding it is to attack someone else with it, causing it to latch to that person instead."
 	item = /obj/item/hot_potato/syndicate
 	cost = 4
-	restricted_roles = list(JOB_COOK, JOB_FARMER, JOB_CLOWN, JOB_MIME)
+	restricted_roles = list(JOB_COOK, JOB_FARMER, JOB_MIME)
 
 /datum/uplink_item/role_restricted/combat_baking
 	name = "Combat Bakery Kit"
@@ -123,14 +120,12 @@
 	head after three seconds uninterrupted."
 	cost = 5
 	item = /obj/item/reverse_bear_trap
-	restricted_roles = list(JOB_CLOWN)
 
 /datum/uplink_item/role_restricted/modified_syringe_gun
 	name = "Modified Syringe Gun"
 	desc = "A syringe gun that fires DNA injectors instead of normal syringes."
 	item = /obj/item/gun/syringe/dna
 	cost = 14
-	restricted_roles = list(JOB_GENETICIST, JOB_RESEARCH_DIRECTOR)
 
 /datum/uplink_item/role_restricted/meathook
 	name = "Butcher's Meat Hook"
@@ -160,7 +155,6 @@
 			Now also contains regenerative chemicals to keep users healthy as they exercise their newfound muscles."
 	item = /obj/item/reagent_containers/hypospray/medipen/magillitis
 	cost = 15
-	restricted_roles = list(JOB_GENETICIST, JOB_RESEARCH_DIRECTOR)
 
 /datum/uplink_item/role_restricted/gorillacube
 	name = "Gorilla Cube"
@@ -168,14 +162,13 @@
 			Caution: Product may rehydrate when exposed to water."
 	item = /obj/item/food/monkeycube/gorilla
 	cost = 6
-	restricted_roles = list(JOB_GENETICIST, JOB_RESEARCH_DIRECTOR)
 
 /datum/uplink_item/role_restricted/brainwash_disk
 	name = "Brainwashing Surgery Program"
 	desc = "A disk containing the procedure to perform a brainwashing surgery, allowing you to implant an objective onto a target. \
 	Insert into an Operating Console to enable the procedure."
 	item = /obj/item/disk/surgery/brainwashing
-	restricted_roles = list(JOB_MEDICAL_DOCTOR, JOB_CHIEF_MEDICAL_OFFICER, JOB_CORONER, JOB_ROBOTICIST)
+	restricted_roles = list(JOB_MEDICAL_DOCTOR, JOB_CHIEF_MEDICAL_OFFICER, JOB_CORONER)
 	cost = 5
 	surplus = 50
 
@@ -185,7 +178,7 @@
 	All changes are superficial and does not change ones genetic makeup. \
 	Insert into an Operating Console to enable the procedure."
 	item = /obj/item/disk/surgery/advanced_plastic_surgery
-	restricted_roles = list(JOB_MEDICAL_DOCTOR, JOB_CHIEF_MEDICAL_OFFICER, JOB_ROBOTICIST)
+	restricted_roles = list(JOB_MEDICAL_DOCTOR, JOB_CHIEF_MEDICAL_OFFICER)
 	cost = 1
 	surplus = 50
 
@@ -198,7 +191,6 @@
 		This version of the module has been modified to allow for near instant activation of the MODsuit. \
 		Useful for quickly getting your MODsuit on/off, or for taking care of a target via a tragic accident."
 	item = /obj/item/mod/module/springlock/bite_of_87
-	restricted_roles = list(JOB_ROBOTICIST, JOB_RESEARCH_DIRECTOR)
 	cost = 2
 	surplus = 15
 
@@ -209,7 +201,6 @@
 	progression_minimum = 30 MINUTES
 	cost = 14
 	item = /obj/item/storage/box/hug/reverse_revolver
-	restricted_roles = list(JOB_CLOWN)
 
 /datum/uplink_item/role_restricted/pressure_mod
 	name = "Kinetic Accelerator Pressure Mod"
@@ -238,7 +229,6 @@
 	progression_minimum = 20 MINUTES
 	cost = 10
 	item = /obj/item/autosurgeon/syndicate/laser_arm
-	restricted_roles = list(JOB_ROBOTICIST, JOB_RESEARCH_DIRECTOR)
 	surplus = 20
 
 /datum/uplink_item/role_restricted/chemical_gun
@@ -254,7 +244,6 @@
 	desc = "A special pie cannon for a special clown, this gadget can hold up to 20 pies and automatically fabricates one every two seconds!"
 	cost = 10
 	item = /obj/item/pneumatic_cannon/pie/selfcharge
-	restricted_roles = list(JOB_CLOWN)
 
 /datum/uplink_item/role_restricted/clown_bomb
 	name = "Clown Bomb"
@@ -266,7 +255,6 @@
 	progression_minimum = 15 MINUTES
 	item = /obj/item/sbeacondrop/clownbomb
 	cost = 15
-	restricted_roles = list(JOB_CLOWN)
 	surplus = 10
 
 /datum/uplink_item/role_restricted/clown_bomb/New()
@@ -283,7 +271,6 @@
 			Premium features can be unlocked with a cryptographic sequencer!"
 	item = /obj/vehicle/sealed/car/clowncar
 	cost = 20
-	restricted_roles = list(JOB_CLOWN)
 	surplus = 10
 
 /datum/uplink_item/role_restricted/clowncar/spawn_item_for_generic_use(mob/user)
@@ -316,7 +303,6 @@
 	progression_minimum = 30 MINUTES
 	item = /obj/item/mecha_parts/mecha_equipment/concealed_weapon_bay
 	cost = 3
-	restricted_roles = list(JOB_ROBOTICIST, JOB_RESEARCH_DIRECTOR)
 	surplus = 15
 
 /datum/uplink_item/role_restricted/spider_injector
@@ -328,7 +314,6 @@
 	progression_minimum = 30 MINUTES
 	item = /obj/item/reagent_containers/syringe/spider_extract
 	cost = 10
-	restricted_roles = list(JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_ROBOTICIST)
 	surplus = 10
 
 /datum/uplink_item/role_restricted/blastcannon
@@ -340,7 +325,6 @@
 	progression_minimum = 30 MINUTES
 	item = /obj/item/gun/blastcannon
 	cost = 14 //High cost because of the potential for extreme damage in the hands of a skilled scientist.
-	restricted_roles = list(JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST)
 	surplus = 5
 
 /datum/uplink_item/role_restricted/evil_seedling
@@ -364,7 +348,7 @@
 		Please note that these are free-range monkeys that don't react with Mutadone."
 	item = /obj/item/antag_spawner/loadout/monkey_man
 	cost = 6
-	restricted_roles = list(JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_GENETICIST, JOB_UNEMPLOYED, JOB_MIME, JOB_CLOWN)
+	restricted_roles = list(JOB_UNEMPLOYED, JOB_MIME)
 	restricted = TRUE
 	refundable = TRUE
 
@@ -375,7 +359,7 @@
 	item = /obj/item/storage/toolbox/guncase/monkeycase
 	cost = 4
 	limited_stock = 3
-	restricted_roles = list(JOB_UNEMPLOYED, JOB_MIME, JOB_CLOWN)
+	restricted_roles = list(JOB_UNEMPLOYED, JOB_MIME)
 	restricted = TRUE
 	refundable = FALSE
 

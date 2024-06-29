@@ -68,8 +68,7 @@ GLOBAL_DATUM_INIT(objective_machine_handler, /datum/objective_target_machine_han
 	progression_minimum = 15 MINUTES
 
 	applicable_jobs = list(
-		JOB_CONSTRUCTION_WORKER = /obj/machinery/telecomms/hub,
-		JOB_SCIENTIST = /obj/machinery/rnd/server,
+		JOB_CONSTRUCTION_WORKER = /obj/machinery/telecomms/hub
 	)
 
 // Rig machines which are in public locations to explode when interacted with
@@ -89,8 +88,6 @@ GLOBAL_DATUM_INIT(objective_machine_handler, /datum/objective_target_machine_han
 		JOB_CHIEF_MEDICAL_OFFICER = /obj/machinery/rnd/production/techfab/department/medical,
 		JOB_CHIEF_OF_INTERNAL_AFFAIRS = /obj/machinery/rnd/production/techfab/department/service,
 		JOB_LOGISTIC_MANAGER = /obj/machinery/rnd/production/techfab/department/cargo,
-		JOB_RESEARCH_DIRECTOR = /obj/machinery/rnd/production/protolathe/department/science,
-		JOB_SHAFT_MINER = /obj/machinery/mineral/ore_redemption,
 	)
 
 	/// Bonus reward to grant if you booby trap successfully

@@ -216,7 +216,6 @@
 /obj/item/storage/lockbox/medal/sci
 	name = "science medal box"
 	desc = "A locked box used to store medals to be given to members of the science department."
-	req_access = list(ACCESS_RD)
 
 /obj/item/storage/lockbox/medal/sci/PopulateContents()
 	for(var/i in 1 to 3)

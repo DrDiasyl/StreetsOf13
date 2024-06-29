@@ -1,8 +1,8 @@
-/datum/job/human_ai
+/* /datum/job/human_ai
 	title = JOB_HUMAN_AI
 	description = "Assist the crew, open airlocks, follow your lawset, and coordinate your cyborgs."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SILICON
-	department_head = list(JOB_RESEARCH_DIRECTOR)
+	department_head = list(JOB_MAYOR)
 	faction = FACTION_STATION
 	total_positions = 0
 	spawn_positions = 0
@@ -169,3 +169,4 @@
 	playsound(src, 'sound/items/drill_use.ogg', 40, TRUE)
 	new /obj/machinery/computer/camera_advanced/human_ai(get_turf(src))
 	qdel(src)
+*/

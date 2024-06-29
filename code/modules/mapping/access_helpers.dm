@@ -231,7 +231,6 @@
 
 /obj/effect/mapping_helpers/airlock/access/any/science/rd/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_RD
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/any/science/maintenance/get_access()
@@ -703,11 +702,6 @@
 /obj/effect/mapping_helpers/airlock/access/all/science/minisat/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_MINISAT
-	return access_list
-
-/obj/effect/mapping_helpers/airlock/access/all/science/rd/get_access()
-	var/list/access_list = ..()
-	access_list += ACCESS_RD
 	return access_list
 
 // -------------------- Security access helpers

@@ -176,12 +176,6 @@ SUBSYSTEM_DEF(id_access)
 			"templates" = list(),
 			"pdas" = list(),
 		),
-		"[ACCESS_RD]" = list(
-			"regions" = list(REGION_RESEARCH),
-			"head" = JOB_RESEARCH_DIRECTOR,
-			"templates" = list(),
-			"pdas" = list(),
-		),
 		"[ACCESS_CE]" = list(
 			"regions" = list(REGION_ENGINEERING),
 			"head" = JOB_FOREMAN,
@@ -263,7 +257,6 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_ORDNANCE]"] = "Ordnance Lab"
 	desc_by_access["[ACCESS_ORDNANCE_STORAGE]"] = "Ordnance Storage"
 	desc_by_access["[ACCESS_PLUMBING]"] = "Chemistry Lab"
-	desc_by_access["[ACCESS_RD]"] = "RD Office"
 	desc_by_access["[ACCESS_BAR]"] = "Bar"
 	desc_by_access["[ACCESS_JANITOR]"] = "Custodial Closet"
 	desc_by_access["[ACCESS_ENGINEERING]"] = "Engineering"

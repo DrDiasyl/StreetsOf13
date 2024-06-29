@@ -6,7 +6,7 @@
 	extended_desc = "Firmware Restoration Kit, capable of reconstructing damaged AI systems. Requires direct AI connection via intellicard slot."
 	size = 12
 	can_run_on_flags = PROGRAM_CONSOLE | PROGRAM_LAPTOP
-	download_access = list(ACCESS_RD)
+	download_access = list(ACCESS_COMMAND)
 	tgui_id = "NtosAiRestorer"
 	program_icon = "laptop-code"
 

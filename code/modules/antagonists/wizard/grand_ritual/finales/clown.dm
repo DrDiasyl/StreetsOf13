@@ -20,10 +20,9 @@
 			A stray thought sticks in the forefront of your mind. \n\
 			[span_hypnophrase("I'm so glad that I work at Clown Research Station [station_name()]!")] \n\
 			Is... that right?"))
-		if (is_clown_job(victim.mind.assigned_role))
-			var/datum/action/cooldown/spell/conjure_item/clown_pockets/new_spell = new(victim)
-			new_spell.Grant(victim)
-			continue
+		var/datum/action/cooldown/spell/conjure_item/clown_pockets/new_spell = new(victim)
+		new_spell.Grant(victim)
+		continue
 		dress_as_magic_clown(victim)
 		if (prob(15))
 			create_vendetta(victim.mind, invoker.mind)

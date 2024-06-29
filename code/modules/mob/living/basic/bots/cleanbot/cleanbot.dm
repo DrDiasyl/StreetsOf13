@@ -38,7 +38,6 @@
 		JOB_MAYOR,
 		JOB_CHIEF_OF_INTERNAL_AFFAIRS,
 		JOB_CHIEF_OF_POLICE,
-		JOB_RESEARCH_DIRECTOR,
 	)
 	///job titles we can get
 	var/static/list/job_titles = list(
@@ -59,18 +58,9 @@
 		JOB_CHIEF_MEDICAL_OFFICER = "C.M.O.",
 		JOB_MEDICAL_DOCTOR = "M.D.",
 		JOB_CHEMIST = "Pharm.D.",
-
-		JOB_RESEARCH_DIRECTOR = "Ph.D.",
-		JOB_ROBOTICIST = "M.S.",
-		JOB_SCIENTIST = "B.S.",
-		JOB_GENETICIST = "Gene B.S.",
 	)
 	///which job titles should be placed after the name?
-	var/static/list/suffix_job_titles = list(
-		JOB_GENETICIST,
-		JOB_ROBOTICIST,
-		JOB_SCIENTIST,
-	)
+	var/static/list/suffix_job_titles = list()
 	///decals we can clean
 	var/static/list/cleanable_decals = typecacheof(list(
 		/obj/effect/decal/cleanable/ants,

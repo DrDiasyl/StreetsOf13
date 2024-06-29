@@ -317,8 +317,6 @@
 			)
 		consumed_mob.dust(force = TRUE)
 		matter_increase += 100 * object_size
-		if(is_clown_job(consumed_mob.mind?.assigned_role))
-			damage_increase += rand(-30, 30) // HONK
 		consume_returns(matter_increase, damage_increase)
 	else if(isobj(consumed_object))
 		if(!iseffect(consumed_object))

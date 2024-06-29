@@ -160,7 +160,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/noticeboard, 32)
 /obj/structure/noticeboard/rd
 	name = "Research Director's Notice Board"
 	desc = "Important notices from the Research Director."
-	req_access = list(ACCESS_RD)
 
 /obj/structure/noticeboard/qm
 	name = "Quartermaster's Notice Board"

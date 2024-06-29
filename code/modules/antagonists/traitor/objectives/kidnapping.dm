@@ -49,15 +49,10 @@
 		/datum/job/doctor,
 		/datum/job/psychologist,
 		/datum/job/coroner,
-		// Science
-		/datum/job/geneticist,
-		/datum/job/roboticist,
-		/datum/job/scientist,
 		// Service
 		/datum/job/bartender,
 		/datum/job/botanist,
 		/datum/job/chaplain,
-		/datum/job/clown,
 		/datum/job/curator,
 		/datum/job/janitor,
 		/datum/job/lawyer,
@@ -79,9 +74,6 @@
 	telecrystal_reward = list(1, 2)
 
 	target_jobs = list(
-		// Cargo
-		/datum/job/bitrunner,
-		/datum/job/shaft_miner,
 		// Medical
 		/datum/job/paramedic,
 		// Service
@@ -99,7 +91,6 @@
 		/datum/job/chief_engineer,
 		/datum/job/chief_medical_officer,
 		/datum/job/head_of_personnel,
-		/datum/job/research_director,
 		/datum/job/quartermaster,
 		// Security
 		/datum/job/detective,

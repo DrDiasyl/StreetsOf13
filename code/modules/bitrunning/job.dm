@@ -1,4 +1,4 @@
-/datum/job/bitrunner
+/*/datum/job/bitrunner
 	title = JOB_BITRUNNER
 	description = "Surf the virtual domain for gear and loot. Decrypt your rewards on station."
 	department_head = list(JOB_LOGISTIC_MANAGER)
@@ -30,12 +30,11 @@
 	)
 	rpg_title = "Recluse"
 	job_flags = STATION_JOB_FLAGS
+*/
 
 /datum/outfit/job/bitrunner
 	name = "Bitrunner"
-	jobtype = /datum/job/bitrunner
 
-	id_trim = /datum/id_trim/job/bitrunner
 	uniform = /obj/item/clothing/under/rank/cargo/bitrunner
 	belt = /obj/item/modular_computer/pda/bitrunner
 	ears = /obj/item/radio/headset/headset_cargo

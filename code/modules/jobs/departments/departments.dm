@@ -129,25 +129,6 @@
 	head_of_staff_access = ACCESS_CMO
 	department_access = REGION_ACCESS_MEDBAY
 
-/datum/job_department/science
-	department_name = DEPARTMENT_SCIENCE
-	department_bitflags = DEPARTMENT_BITFLAG_SCIENCE
-	department_head = /datum/job/research_director
-	department_experience_type = EXP_TYPE_SCIENCE
-	display_order = 5
-	label_class = "science"
-	ui_color = "#c973c9"
-	nation_prefixes = list("Sci", "Griffa", "Geneti", "Explosi", "Mecha", "Xeno", "Nani", "Cyto")
-	department_delivery_areas = list(
-		/area/station/science/research,
-		/area/station/science/lobby,
-		/area/station/science/lab,
-	)
-	associated_cargo_groups = list("Science", "Livestock", "Canisters & Materials")
-	head_of_staff_access = ACCESS_RD
-	department_access = REGION_ACCESS_RESEARCH
-
-
 /datum/job_department/cargo
 	department_name = DEPARTMENT_CARGO
 	department_bitflags = DEPARTMENT_BITFLAG_CARGO

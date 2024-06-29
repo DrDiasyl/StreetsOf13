@@ -125,7 +125,6 @@
 	var/list/possible_targets = list() //The second list, which filters out silicons and simplemobs
 	var/static/list/trait_obsessions = list(
 		JOB_MIME = TRAIT_MIME_FAN,
-		JOB_CLOWN = TRAIT_CLOWN_ENJOYER,
 		JOB_PRIEST = TRAIT_SPIRITUAL,
 	) // Jobs and their corresponding quirks
 	var/list/special_pool = list() //The special list, for quirk-based

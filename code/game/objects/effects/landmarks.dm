@@ -178,8 +178,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "Roboticist"
 
 /obj/effect/landmark/start/research_director
-	name = JOB_RESEARCH_DIRECTOR
-	icon_state = JOB_RESEARCH_DIRECTOR
+	name = "RD"
 
 /obj/effect/landmark/start/geneticist
 	name = "Geneticist"

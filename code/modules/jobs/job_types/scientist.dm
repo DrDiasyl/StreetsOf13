@@ -1,4 +1,4 @@
-/datum/job/scientist
+/* /datum/job/scientist
 	title = JOB_SCIENTIST
 	description = "Do experiments, perform research, feed the slimes, make bombs."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
@@ -35,13 +35,11 @@
 	job_flags = STATION_JOB_FLAGS
 
 	job_tone = "boom"
-
+*/
 
 /datum/outfit/job/scientist
 	name = "Scientist"
-	jobtype = /datum/job/scientist
 
-	id_trim = /datum/id_trim/job/scientist
 	uniform = /obj/item/clothing/under/rank/rnd/scientist
 	suit = /obj/item/clothing/suit/toggle/labcoat/science
 	belt = /obj/item/modular_computer/pda/science

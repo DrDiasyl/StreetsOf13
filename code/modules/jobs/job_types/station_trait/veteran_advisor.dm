@@ -1,4 +1,4 @@
-/datum/job/veteran_advisor
+/* /datum/job/veteran_advisor
 	title = JOB_VETERAN_ADVISOR
 	description = "Advise HoS, and Captain on matters of Security. Train green Officers. \
 		Lay back in your wheelchair and say \"I told you\" to the HoS when all of the station collapses."
@@ -48,12 +48,11 @@
 	spawned.add_quirk(/datum/quirk/paraplegic) //Even in 2300s veterans are getting it bad
 	if(veteran)
 		veteran.gain_trauma(/datum/brain_trauma/special/ptsd) //War, war never changes...
+	*/
 
 /datum/outfit/job/veteran_advisor
 	name = "Veteran Security Advisor"
-	jobtype = /datum/job/veteran_advisor
 
-	id_trim = /datum/id_trim/job/veteran_advisor
 	backpack_contents = list(
 		/obj/item/modular_computer/pda/veteran_advisor = 1,
 		/obj/item/storage/fancy/cigarettes/cigars = 1,

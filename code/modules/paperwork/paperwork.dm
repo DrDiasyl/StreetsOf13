@@ -183,19 +183,6 @@
 	detailed_desc += span_info(" Clearly the station's engineering department was testing an experimental engine setup, and had to use the air in the nearby rooms to help cool the engine. Totally.")
 	detailed_desc += span_info(" Damn, that's impressive stuff. You should probably stamp this.")
 
-/obj/item/paperwork/research
-	stamp_requested = /obj/item/stamp/head/rd
-	stamp_job = /datum/job/research_director
-	stamp_icon = "paper_stamp-rd"
-
-/obj/item/paperwork/research/Initialize(mapload)
-	. = ..()
-
-	detailed_desc += span_info(" The documents detail the results of a standard ordnance test that occured on a nearby station.")
-	detailed_desc += span_info(" As you read further, you realize something strange with the results -- The epicenter doesn't seem to be correct.")
-	detailed_desc += span_info(" If your math is correct, this explosion didn't happen at the station's ordnance site, it occured in the station's engine room.")
-	detailed_desc += span_info(" Regardless, they're still perfectly usable test results. You should probably stamp this.")
-
 /obj/item/paperwork/captain
 	stamp_requested = /obj/item/stamp/head/captain
 	stamp_job = /datum/job/captain

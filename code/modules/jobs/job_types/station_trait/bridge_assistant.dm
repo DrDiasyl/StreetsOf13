@@ -1,4 +1,4 @@
-/datum/job/bridge_assistant
+/*/datum/job/bridge_assistant
 	title = JOB_BRIDGE_ASSISTANT
 	description = "Watch over the Bridge, command its consoles, and spend your days brewing coffee for higher-ups."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD //not really a head but close enough
@@ -58,12 +58,11 @@
 	if(length(possible_turfs))
 		return pick(possible_turfs) //if none, just pick a random turf in the bridge
 	return ..() //if the bridge has no turfs, spawn on the arrivals shuttle
+	*/
 
 /datum/outfit/job/bridge_assistant
 	name = "Bridge Assistant"
-	jobtype = /datum/job/bridge_assistant
 
-	id_trim = /datum/id_trim/job/bridge_assistant
 	backpack_contents = list(
 		/obj/item/modular_computer/pda/bridge_assistant = 1,
 	)

@@ -504,7 +504,6 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
 		JOB_LOGISTIC_MANAGER,
-		JOB_RESEARCH_DIRECTOR,
 		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
@@ -685,7 +684,6 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		/datum/job_department/cargo,
 		/datum/job_department/engineering,
 		/datum/job_department/medical,
-		/datum/job_department/science,
 		/datum/job_department/security,
 		/datum/job_department/service,
 	)

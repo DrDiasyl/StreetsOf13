@@ -1,4 +1,4 @@
-/datum/job/research_director
+/* /datum/job/research_director
 	title = JOB_RESEARCH_DIRECTOR
 	description = "Supervise research efforts, ensure Robotics is in working \
 		order, make sure the AI and its Cyborgs aren't rogue, replacing them if \
@@ -48,15 +48,13 @@
 
 
 /datum/job/research_director/get_captaincy_announcement(mob/living/captain)
-	return "Due to staffing shortages, newly promoted Acting Captain [captain.real_name] on deck!"
+	return "Due to staffing shortages, newly promoted Acting Captain [captain.real_name] on deck!" */
 
 
 /datum/outfit/job/rd
-	name = JOB_RESEARCH_DIRECTOR
-	jobtype = /datum/job/research_director
+	name = "RD"
 
 	id = /obj/item/card/id/advanced/silver
-	id_trim = /datum/id_trim/job/research_director
 	uniform = /obj/item/clothing/under/rank/rnd/research_director/turtleneck
 	suit = /obj/item/clothing/suit/jacket/research_director
 	backpack_contents = list(

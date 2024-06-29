@@ -52,8 +52,7 @@
 
 /datum/quirk/spacer_born/post_add()
 	var/on_a_planet = SSmapping.is_planetary()
-	var/planet_job = istype(quirk_holder.mind?.assigned_role, /datum/job/shaft_miner)
-	if(!on_a_planet && !planet_job)
+	if(!on_a_planet)
 		return
 	var/datum/bank_account/spacer_account = quirk_holder.get_bank_account()
 	if(!isnull(spacer_account))

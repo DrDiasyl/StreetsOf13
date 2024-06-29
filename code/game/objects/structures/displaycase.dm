@@ -321,7 +321,6 @@
 	name = "lab cage"
 	desc = "A glass lab container for storing interesting creatures."
 	start_showpiece_type = /obj/item/clothing/mask/facehugger/lamarr
-	req_access = list(ACCESS_RD)
 
 /obj/structure/displaycase/noalert
 	alert = FALSE

@@ -151,7 +151,6 @@
 	desc = "The key ingredient for making a lot of people very angry very fast. \
 		Contains two tank transfer valves."
 	cost = CARGO_CRATE_VALUE * 12
-	access = ACCESS_RD
 	contains = list(/obj/item/transfer_valve = 2)
 	crate_name = "tank transfer valves crate"
 	crate_type = /obj/structure/closet/crate/secure/science

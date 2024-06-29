@@ -545,8 +545,6 @@
 	switch(mind?.assigned_role.type)
 		if(/datum/job/chief_engineer, /datum/job/station_engineer)
 			. = 100
-		if(/datum/job/clown)
-			. = rand(-1000, 1000)
 	..() //Called afterwards because getting the mind after getting gibbed is sketchy
 
 /mob/living/carbon/human/help_shake_act(mob/living/carbon/helper)

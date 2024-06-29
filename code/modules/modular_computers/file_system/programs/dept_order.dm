@@ -23,7 +23,6 @@
 	VAR_PRIVATE/static/list/department_cooldowns = list(
 		/datum/job_department/engineering = 0,
 		/datum/job_department/medical = 0,
-		/datum/job_department/science = 0,
 		/datum/job_department/security = 0,
 		/datum/job_department/service = 0,
 	)
@@ -38,7 +37,6 @@
 	VAR_PRIVATE/static/list/dept_to_radio = list(
 		/datum/job_department/engineering = /obj/item/encryptionkey/headset_eng,
 		/datum/job_department/medical = /obj/item/encryptionkey/headset_med,
-		/datum/job_department/science = /obj/item/encryptionkey/headset_sci,
 		/datum/job_department/security = /obj/item/encryptionkey/headset_sec,
 		/datum/job_department/service = /obj/item/encryptionkey/headset_service,
 	)

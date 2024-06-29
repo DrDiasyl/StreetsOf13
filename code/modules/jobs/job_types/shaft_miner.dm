@@ -1,4 +1,4 @@
-/datum/job/shaft_miner
+/*/datum/job/shaft_miner
 	title = JOB_SHAFT_MINER
 	description = "Travel to strange lands. Mine ores. \
 		Meet strange creatures. Kill them for their gold."
@@ -27,13 +27,11 @@
 	family_heirlooms = list(/obj/item/pickaxe/mini, /obj/item/shovel)
 	rpg_title = "Adventurer"
 	job_flags = STATION_JOB_FLAGS
-
+*/
 
 /datum/outfit/job/miner
 	name = "Shaft Miner"
-	jobtype = /datum/job/shaft_miner
 
-	id_trim = /datum/id_trim/job/shaft_miner
 	uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
 	skillchips = list(/obj/item/skillchip/job/miner)
 	backpack_contents = list(

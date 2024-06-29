@@ -1,4 +1,4 @@
-/datum/job/clown
+/*/datum/job/clown
 	title = JOB_CLOWN
 	description = "Entertain the crew, make bad jokes, go on a holy quest to find bananium, HONK!"
 	department_head = list(JOB_CHIEF_OF_INTERNAL_AFFAIRS)
@@ -44,14 +44,12 @@
 	if(!ishuman(spawned))
 		return
 	spawned.apply_pref_name(/datum/preference/name/clown, player_client)
-
+*/
 
 /datum/outfit/job/clown
 	name = "Clown"
-	jobtype = /datum/job/clown
 
 	id = /obj/item/card/id/advanced/rainbow
-	id_trim = /datum/id_trim/job/clown
 	uniform = /obj/item/clothing/under/rank/civilian/clown
 	backpack_contents = list(
 		/obj/item/stamp/clown = 1,

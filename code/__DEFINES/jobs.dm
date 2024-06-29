@@ -45,23 +45,23 @@
 #define JOB_MAYOR "Mayor"
 #define JOB_CHIEF_OF_INTERNAL_AFFAIRS "Chief of Internal Affairs"
 #define JOB_CHIEF_OF_POLICE "Chief of Police"
-#define JOB_RESEARCH_DIRECTOR "Research Director" //to be nuked
+//#define JOB_RESEARCH_DIRECTOR "Research Director"
 #define JOB_CHIEF_MEDICAL_OFFICER "Chief Medical Officer"
-#define JOB_BRIDGE_ASSISTANT "Bridge Assistant" //to be nuked
-#define JOB_VETERAN_ADVISOR "Veteran Security Advisor" //to be nuked
+//#define JOB_BRIDGE_ASSISTANT "Bridge Assistant"
+//#define JOB_VETERAN_ADVISOR "Veteran Security Advisor"
 //Silicon
 #define JOB_AI "AI"
 #define JOB_CYBORG "Cyborg"
-#define JOB_PERSONAL_AI "Personal AI" //to be nuked
-#define JOB_HUMAN_AI "Big Brother" //to be nuked
+#define JOB_PERSONAL_AI "Personal AI"
+//#define JOB_HUMAN_AI "Big Brother"
 //Security
 #define JOB_WARDEN "Warden"
 #define JOB_DETECTIVE "Detective"
 #define JOB_POLICE_OFFICER "Police Officer"
-#define JOB_POLICE_OFFICER_MEDICAL "Security Officer (Medical)" //to be nuked
-#define JOB_POLICE_OFFICER_ENGINEERING "Security Officer (Engineering)" //to be nuked
-#define JOB_POLICE_OFFICER_SCIENCE "Security Officer (Science)" //to be nuked
-#define JOB_POLICE_OFFICER_SUPPLY "Security Officer (Cargo)" //to be nuked
+//#define JOB_POLICE_OFFICER_MEDICAL "Security Officer (Medical)"
+//#define JOB_POLICE_OFFICER_ENGINEERING "Security Officer (Engineering)"
+//#define JOB_POLICE_OFFICER_SCIENCE "Security Officer (Science)"
+//#define JOB_POLICE_OFFICER_SUPPLY "Security Officer (Cargo)"
 //Engineering
 #define JOB_FOREMAN "Foreman" //demoted from command
 #define JOB_CONSTRUCTION_WORKER "Construction Worker"
@@ -71,23 +71,23 @@
 #define JOB_MEDICAL_DOCTOR "Medical Doctor"
 #define JOB_PARAMEDIC "Paramedic"
 #define JOB_CHEMIST "Chemist"
-//Science, all of it must be nuked
-#define JOB_SCIENTIST "Scientist" //to be nuked
-#define JOB_ROBOTICIST "Roboticist" //to be nuked
-#define JOB_GENETICIST "Geneticist" //to be nuked
+//Science, all of it is nuked
+//#define JOB_SCIENTIST "Scientist"
+//#define JOB_ROBOTICIST "Roboticist"
+//#define JOB_GENETICIST "Geneticist"
 //Supply
 #define JOB_LOGISTIC_MANAGER "Logistic Manager"
 #define JOB_LOGISTIC_TECHNICIAN "Logistic Technician"
-#define JOB_CARGO_GORILLA "Cargo Gorilla" //to be nuked
-#define JOB_SHAFT_MINER "Shaft Miner" //to be nuked
-#define JOB_BITRUNNER "Bitrunner" //to be nuked
+//#define JOB_CARGO_GORILLA "Cargo Gorilla"
+//#define JOB_SHAFT_MINER "Shaft Miner"
+//#define JOB_BITRUNNER "Bitrunner"
 //Service
 #define JOB_BARTENDER "Bartender"
 #define JOB_FARMER "Farmer"
 #define JOB_COOK "Cook"
 #define JOB_CHEF "Chef" // Alternate cook title.
 #define JOB_STREET_CLEANER "Street Cleaner"
-#define JOB_CLOWN "Clown" //to be nuked. There is only mimes, this is truly a dystopia
+//#define JOB_CLOWN "Clown" There is only mimes, this is truly a dystopia
 #define JOB_MIME "Mime"
 #define JOB_CURATOR "Curator"
 #define JOB_LAWYER "Lawyer"
@@ -125,12 +125,10 @@
 #define JOB_DISPLAY_ORDER_UNEMPLOYED 1
 #define JOB_DISPLAY_ORDER_MAYOR 2
 #define JOB_DISPLAY_ORDER_CHIEF_OF_INTERNAL_AFFAIRS 3
-#define JOB_DISPLAY_ORDER_BRIDGE_ASSISTANT 4 //to be nuked
 #define JOB_DISPLAY_ORDER_BARTENDER 5
 #define JOB_DISPLAY_ORDER_FARMER 6
 #define JOB_DISPLAY_ORDER_COOK 7
 #define JOB_DISPLAY_ORDER_STREET_CLEANER 8
-#define JOB_DISPLAY_ORDER_CLOWN 9 //to be nuked
 #define JOB_DISPLAY_ORDER_MIME 10
 #define JOB_DISPLAY_ORDER_CURATOR 11
 #define JOB_DISPLAY_ORDER_LAWYER 12
@@ -143,20 +141,12 @@
 #define JOB_DISPLAY_ORDER_FIREFIGHTER 19
 #define JOB_DISPLAY_ORDER_LOGISTIC_MANAGER 20
 #define JOB_DISPLAY_ORDER_LOGISTIC_TECHNICIAN 21
-#define JOB_DISPLAY_ORDER_SHAFT_MINER 22 //to be nuked
-#define JOB_DISPLAY_ORDER_BITRUNNER 23 //to be nuked
-#define JOB_DISPLAY_ORDER_CARGO_GORILLA 24 //to be nuked
 #define JOB_DISPLAY_ORDER_CHIEF_MEDICAL_OFFICER 25
 #define JOB_DISPLAY_ORDER_MEDICAL_DOCTOR 26
 #define JOB_DISPLAY_ORDER_PARAMEDIC 27
 #define JOB_DISPLAY_ORDER_CHEMIST 28
 #define JOB_DISPLAY_ORDER_CORONER 29
-#define JOB_DISPLAY_ORDER_RESEARCH_DIRECTOR 30 //to be nuked
-#define JOB_DISPLAY_ORDER_SCIENTIST 31 //to be nuked
-#define JOB_DISPLAY_ORDER_ROBOTICIST 32 //to be nuked
-#define JOB_DISPLAY_ORDER_GENETICIST 33 //to be nuked
 #define JOB_DISPLAY_ORDER_CHIEF_OF_POLICE 34
-#define JOB_DISPLAY_ORDER_VETERAN_ADVISOR 35 //to be nuked
 #define JOB_DISPLAY_ORDER_WARDEN 36
 #define JOB_DISPLAY_ORDER_DETECTIVE 37
 #define JOB_DISPLAY_ORDER_SECURITY_OFFICER 38

@@ -74,13 +74,6 @@
 /datum/preference/name/backup_human/create_informed_default_value(datum/preferences/preferences)
 	return generate_random_name(preferences.read_preference(/datum/preference/choiced/gender))
 
-/datum/preference/name/clown
-	savefile_key = "clown_name"
-
-	explanation = "Clown name"
-	group = "fun"
-	relevant_job = /datum/job/clown
-
 /datum/preference/name/clown/create_default_value()
 	return pick(GLOB.clown_names)
 
@@ -174,15 +167,3 @@
 		return TRUE
 
 	return FALSE
-
-
-/// The name to use while bitrunning
-/datum/preference/name/hacker_alias
-	explanation = "Hacker alias"
-	group = "bitrunning"
-	savefile_key = "hacker_alias"
-	allow_numbers = TRUE
-	relevant_job = /datum/job/bitrunner
-
-/datum/preference/name/hacker_alias/create_default_value()
-	return pick(GLOB.hacker_aliases)

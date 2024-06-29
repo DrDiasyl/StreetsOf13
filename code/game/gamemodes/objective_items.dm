@@ -103,7 +103,6 @@
 		JOB_CHIEF_OF_INTERNAL_AFFAIRS,
 		JOB_CHIEF_OF_POLICE,
 		JOB_LOGISTIC_MANAGER,
-		JOB_RESEARCH_DIRECTOR,
 		JOB_CONSTRUCTION_WORKER,
 	)
 	exists_on_map = TRUE
@@ -117,12 +116,6 @@
 /datum/objective_item/steal/traitor/big_crowbar
 	name = "a mech removal tool"
 	targetitem = /obj/item/crowbar/mechremoval
-	excludefromjob = list(
-		JOB_RESEARCH_DIRECTOR,
-		JOB_SCIENTIST,
-		JOB_ROBOTICIST,
-	)
-	item_owner = list(JOB_ROBOTICIST)
 	exists_on_map = TRUE
 	difficulty = 2
 	steal_hint = "A specialized tool found in the roboticist's lab. You can use a multitool to hack open the case, or break it open the hard way."
@@ -146,8 +139,7 @@
 /datum/objective_item/steal/traitor/clown_shoes
 	name = "the clown's shoes"
 	targetitem = /obj/item/clothing/shoes/clown_shoes
-	excludefromjob = list(JOB_CLOWN, JOB_LOGISTIC_TECHNICIAN, JOB_LOGISTIC_MANAGER)
-	item_owner = list(JOB_CLOWN)
+	excludefromjob = list(JOB_LOGISTIC_TECHNICIAN, JOB_LOGISTIC_MANAGER)
 	exists_on_map = TRUE
 	difficulty = 1
 	steal_hint = "The clown's huge, bright shoes. They should always be on the clown's feet."
@@ -170,8 +162,7 @@
 /datum/objective_item/steal/traitor/pka
 	name = "a protokinetic accelerator"
 	targetitem = /obj/item/gun/energy/recharge/kinetic_accelerator
-	excludefromjob = list(JOB_SHAFT_MINER, JOB_LOGISTIC_TECHNICIAN, JOB_LOGISTIC_MANAGER)
-	item_owner = list(JOB_SHAFT_MINER)
+	excludefromjob = list(JOB_LOGISTIC_TECHNICIAN, JOB_LOGISTIC_MANAGER)
 	exists_on_map = TRUE
 	difficulty = 1
 	steal_hint = "A tool primarily used by shaft miners to mine. Most carry one (or multiple) on their person, \
@@ -231,7 +222,6 @@
 	name = "a head of staff's telescopic baton"
 	targetitem = /obj/item/melee/baton/telescopic
 	excludefromjob = list(
-		JOB_RESEARCH_DIRECTOR,
 		JOB_MAYOR,
 		JOB_CHIEF_OF_POLICE,
 		JOB_CHIEF_OF_INTERNAL_AFFAIRS,
@@ -279,7 +269,6 @@
 	name = "the captain's spare ID"
 	targetitem = /obj/item/card/id/advanced/gold/captains_spare
 	excludefromjob = list(
-		JOB_RESEARCH_DIRECTOR,
 		JOB_MAYOR,
 		JOB_CHIEF_OF_POLICE,
 		JOB_CHIEF_OF_INTERNAL_AFFAIRS,
@@ -339,8 +328,8 @@
 /datum/objective_item/steal/handtele
 	name = "a hand teleporter"
 	targetitem = /obj/item/hand_tele
-	excludefromjob = list(JOB_MAYOR, JOB_RESEARCH_DIRECTOR, JOB_CHIEF_OF_INTERNAL_AFFAIRS)
-	item_owner = list(JOB_MAYOR, JOB_RESEARCH_DIRECTOR)
+	excludefromjob = list(JOB_MAYOR, JOB_CHIEF_OF_INTERNAL_AFFAIRS)
+	item_owner = list(JOB_MAYOR)
 	exists_on_map = TRUE
 	difficulty = 3
 	steal_hint = "Only two of these devices exist on the station, with one sitting in the Teleporter Room \
@@ -429,8 +418,6 @@
 /datum/objective_item/steal/reactive
 	name = "the reactive teleport armor"
 	targetitem = /obj/item/clothing/suit/armor/reactive/teleport
-	excludefromjob = list(JOB_RESEARCH_DIRECTOR)
-	item_owner = list(JOB_RESEARCH_DIRECTOR)
 	exists_on_map = TRUE
 	difficulty = 3
 	steal_hint = "A special suit of armor found in the possession of the Research Director. \
@@ -471,8 +458,6 @@
 /datum/objective_item/steal/hdd_extraction
 	name = "the source code for Project Goon from the master R&D server mainframe"
 	targetitem = /obj/item/computer_disk/hdd_theft
-	excludefromjob = list(JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_ROBOTICIST, JOB_GENETICIST)
-	item_owner = list(JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST)
 	exists_on_map = TRUE
 	difficulty = 4
 	steal_hint = "The hard drive of the master research server, found in R&D's server room."
@@ -601,7 +586,7 @@
 /datum/objective_item/steal/traitor/denied_stamp
 	name = "cargo's denied stamp"
 	targetitem = /obj/item/stamp/denied
-	excludefromjob = list(JOB_LOGISTIC_TECHNICIAN, JOB_LOGISTIC_MANAGER, JOB_SHAFT_MINER)
+	excludefromjob = list(JOB_LOGISTIC_TECHNICIAN, JOB_LOGISTIC_MANAGER)
 	exists_on_map = TRUE
 	difficulty = 1
 	steal_hint = "Cargo often has multiple of these red stamps lying around to process paperwork."
@@ -612,7 +597,7 @@
 /datum/objective_item/steal/traitor/granted_stamp
 	name = "cargo's granted stamp"
 	targetitem = /obj/item/stamp/granted
-	excludefromjob = list(JOB_LOGISTIC_TECHNICIAN, JOB_LOGISTIC_MANAGER, JOB_SHAFT_MINER)
+	excludefromjob = list(JOB_LOGISTIC_TECHNICIAN, JOB_LOGISTIC_MANAGER)
 	exists_on_map = TRUE
 	difficulty = 1
 	steal_hint = "Cargo often has multiple of these green stamps lying around to process paperwork."
@@ -639,10 +624,6 @@
 		JOB_FIREFIGHTER,
 		JOB_CONSTRUCTION_WORKER,
 		JOB_FOREMAN,
-		JOB_SCIENTIST,
-		JOB_RESEARCH_DIRECTOR,
-		JOB_GENETICIST,
-		JOB_ROBOTICIST,
 	)
 	item_owner = list(JOB_FOREMAN)
 	exists_on_map = TRUE
@@ -662,7 +643,6 @@
 		JOB_CHIEF_OF_POLICE,
 		JOB_LOGISTIC_MANAGER,
 		JOB_CHIEF_MEDICAL_OFFICER,
-		JOB_RESEARCH_DIRECTOR,
 		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 		JOB_LAWYER,
@@ -681,7 +661,6 @@
 /datum/objective_item/steal/spy/lamarr
 	name = "the Research Director's pet headcrab"
 	targetitem = /obj/item/clothing/mask/facehugger/lamarr
-	excludefromjob = list(JOB_RESEARCH_DIRECTOR)
 	exists_on_map = TRUE
 	difficulty = 3
 	steal_hint = "The Research Director's pet headcrab, Lamarr, found in a secure cage in their office."
@@ -714,7 +693,6 @@
 		JOB_CHIEF_OF_INTERNAL_AFFAIRS,
 		JOB_CHIEF_OF_POLICE,
 		JOB_LOGISTIC_MANAGER,
-		JOB_RESEARCH_DIRECTOR,
 		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
@@ -740,7 +718,6 @@
 		JOB_CHIEF_OF_INTERNAL_AFFAIRS,
 		JOB_CHIEF_OF_POLICE,
 		JOB_LOGISTIC_MANAGER,
-		JOB_RESEARCH_DIRECTOR,
 		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
@@ -799,7 +776,6 @@
 		JOB_CHIEF_OF_INTERNAL_AFFAIRS,
 		JOB_CHIEF_OF_POLICE,
 		JOB_LOGISTIC_MANAGER,
-		JOB_RESEARCH_DIRECTOR,
 	)
 	exists_on_map = TRUE
 	difficulty = 1
@@ -819,7 +795,6 @@
 		JOB_CHIEF_OF_POLICE,
 		JOB_LAWYER,
 		JOB_LOGISTIC_MANAGER,
-		JOB_RESEARCH_DIRECTOR,
 		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
@@ -841,7 +816,6 @@
 /datum/objective_item/steal/spy/rd_modsuit
 	name = "the research director's research MOD control unit"
 	targetitem = /obj/item/mod/control/pre_equipped/research
-	excludefromjob = list(JOB_RESEARCH_DIRECTOR)
 	exists_on_map = TRUE
 	difficulty = 2
 	steal_hint = "A bulky MODsuit commonly worn by the Research Director to protect themselves from the hazards of their work."

@@ -1191,7 +1191,6 @@
 	dir = 4
 	},
 /obj/structure/table/wood,
-/obj/item/paperwork/research,
 /turf/open/floor/iron/dark,
 /area/misc/anomaly_research)
 "Gj" = (
@@ -1720,7 +1719,6 @@
 /area/misc/anomaly_research)
 "UJ" = (
 /obj/structure/table/glass,
-/obj/item/paperwork/research,
 /obj/effect/turf_decal/siding/white,
 /turf/open/floor/iron/dark,
 /area/misc/anomaly_research)

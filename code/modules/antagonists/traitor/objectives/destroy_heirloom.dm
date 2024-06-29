@@ -46,17 +46,12 @@
 		/datum/job/chemist,
 		/datum/job/coroner,
 		// Service
-		/datum/job/clown,
 		/datum/job/botanist,
 		/datum/job/janitor,
 		/datum/job/mime,
 		/datum/job/lawyer,
 		// Cargo
 		/datum/job/cargo_technician,
-		// Science
-		/datum/job/geneticist,
-		/datum/job/scientist,
-		/datum/job/roboticist,
 		// Engineering
 		/datum/job/station_engineer,
 		/datum/job/atmospheric_technician,
@@ -75,9 +70,6 @@
 	progression_reward = list(8 MINUTES, 12 MINUTES)
 	telecrystal_reward = list(1, 2)
 	target_jobs = list(
-		// Cargo
-		/datum/job/bitrunner,
-		/datum/job/shaft_miner,
 		// Service
 		/datum/job/chaplain,
 		/datum/job/bartender,
@@ -99,7 +91,6 @@
 		// Heads of staff
 		/datum/job/head_of_personnel,
 		/datum/job/chief_medical_officer,
-		/datum/job/research_director,
 		/datum/job/quartermaster,
 		/datum/job/chief_engineer,
 	)

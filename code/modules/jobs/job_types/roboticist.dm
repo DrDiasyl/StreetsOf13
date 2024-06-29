@@ -1,4 +1,4 @@
-/datum/job/roboticist
+/*/datum/job/roboticist
 	title = JOB_ROBOTICIST
 	description = "Build and repair the AI and cyborgs, create mechs."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
@@ -38,12 +38,11 @@
 /datum/job/roboticist/New()
 	. = ..()
 	family_heirlooms += subtypesof(/obj/item/toy/mecha)
+*/
 
 /datum/outfit/job/roboticist
 	name = "Roboticist"
-	jobtype = /datum/job/roboticist
 
-	id_trim = /datum/id_trim/job/roboticist
 	uniform = /obj/item/clothing/under/rank/rnd/roboticist
 	suit = /obj/item/clothing/suit/toggle/labcoat/roboticist
 	belt = /obj/item/storage/belt/utility/full

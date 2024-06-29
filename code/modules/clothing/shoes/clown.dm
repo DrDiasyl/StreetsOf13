@@ -21,14 +21,10 @@
 	if(slot & ITEM_SLOT_FEET)
 		if(enabled_waddle)
 			user.AddElementTrait(TRAIT_WADDLING, SHOES_TRAIT, /datum/element/waddling)
-		if(is_clown_job(user.mind?.assigned_role))
-			user.add_mood_event("clownshoes", /datum/mood_event/clownshoes)
 
 /obj/item/clothing/shoes/clown_shoes/dropped(mob/living/user)
 	. = ..()
 	REMOVE_TRAIT(user, TRAIT_WADDLING, SHOES_TRAIT)
-	if(is_clown_job(user.mind?.assigned_role))
-		user.clear_mood_event("clownshoes")
 
 /obj/item/clothing/shoes/clown_shoes/item_ctrl_click(mob/user)
 	if(!isliving(user))
