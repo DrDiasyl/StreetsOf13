@@ -24,8 +24,8 @@
 		),
 		JOB_MAYOR = /mob/living/basic/pet/fox/renault,
 		JOB_CHIEF_MEDICAL_OFFICER = /mob/living/basic/pet/cat/runtime,
-		JOB_FOREMAN = /mob/living/basic/parrot/poly,
-		JOB_LOGISTIC_MANAGER = list(
+		JOB_CIVIL_MANAGER = /mob/living/basic/parrot/poly,
+		JOB_HEAD_BANKER = list(
 			/mob/living/basic/gorilla/cargorilla,
 			/mob/living/basic/sloth/citrus,
 			/mob/living/basic/sloth/paperwork,

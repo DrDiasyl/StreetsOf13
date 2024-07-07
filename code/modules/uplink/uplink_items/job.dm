@@ -22,7 +22,7 @@
 	item = /obj/item/storage/box/syndie_kit/mail_counterfeit
 	cost = 2
 	illegal_tech = FALSE
-	restricted_roles = list(JOB_LOGISTIC_TECHNICIAN, JOB_LOGISTIC_MANAGER)
+	restricted_roles = list(JOB_LOGISTIC_TECHNICIAN, JOB_HEAD_BANKER)
 	surplus = 5
 
 /datum/uplink_item/role_restricted/bureaucratic_error
@@ -33,7 +33,7 @@
 	limited_stock = 1
 	cost = 2
 	restricted = TRUE
-	restricted_roles = list(JOB_CHIEF_OF_INTERNAL_AFFAIRS, JOB_LOGISTIC_MANAGER)
+	restricted_roles = list(JOB_CHIEF_OF_INTERNAL_AFFAIRS, JOB_HEAD_BANKER)
 
 /datum/uplink_item/role_restricted/bureaucratic_error/spawn_item(spawn_path, mob/user, datum/uplink_handler/uplink_handler, atom/movable/source)
 	force_event(/datum/round_event_control/bureaucratic_error, "a syndicate virus")
@@ -139,14 +139,14 @@
 	desc = "A disposable sentry gun deployment system cleverly disguised as a toolbox, apply wrench for functionality."
 	item = /obj/item/storage/toolbox/emergency/turret
 	cost = 11
-	restricted_roles = list(JOB_CONSTRUCTION_WORKER, JOB_FOREMAN)
+	restricted_roles = list(JOB_CIVIL_ENGINEER, JOB_CIVIL_MANAGER)
 
 /datum/uplink_item/role_restricted/rebarxbowsyndie
 	name = "Syndicate Rebar Crossbow"
 	desc = "A much more proffessional version of the engineer's bootleg rebar crossbow. 3 shot mag, quicker loading, and better ammo. Owners manual included."
 	item = /obj/item/storage/box/syndie_kit/rebarxbowsyndie
 	cost = 10
-	restricted_roles = list(JOB_CONSTRUCTION_WORKER, JOB_FOREMAN, JOB_FIREFIGHTER)
+	restricted_roles = list(JOB_CIVIL_ENGINEER, JOB_CIVIL_MANAGER, JOB_FIREFIGHTER)
 
 /datum/uplink_item/role_restricted/magillitis_serum
 	name = "Magillitis Serum Autoinjector"
@@ -237,7 +237,7 @@
 	progression_minimum = 15 MINUTES
 	item = /obj/item/gun/chem
 	cost = 12
-	restricted_roles = list(JOB_CHEMIST, JOB_CHIEF_MEDICAL_OFFICER, JOB_FARMER)
+	restricted_roles = list(JOB_PHARMACIST, JOB_CHIEF_MEDICAL_OFFICER, JOB_FARMER)
 
 /datum/uplink_item/role_restricted/pie_cannon
 	name = "Banana Cream Pie Cannon"

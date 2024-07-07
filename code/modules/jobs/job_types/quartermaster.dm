@@ -1,5 +1,5 @@
 /datum/job/quartermaster
-	title = JOB_LOGISTIC_MANAGER
+	title = JOB_HEAD_BANKER
 	description = "Coordinate cargo technicians and shaft miners, assist with \
 		economical purchasing."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD

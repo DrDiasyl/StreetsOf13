@@ -1,5 +1,5 @@
 /datum/job/chief_engineer
-	title = JOB_FOREMAN
+	title = JOB_CIVIL_MANAGER
 	description = "Coordinate engineering, ensure equipment doesn't get stolen, \
 		make sure the Supermatter doesn't blow up, maintain telecommunications."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD

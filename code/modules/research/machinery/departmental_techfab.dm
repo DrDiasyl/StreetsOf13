@@ -34,7 +34,7 @@
 
 /obj/machinery/rnd/production/techfab/department/science
 	name = "department techfab (Science)"
-	allowed_department_flags = DEPARTMENT_BITFLAG_SCIENCE
+	allowed_department_flags = DEPARTMENT_BITFLAG_ENGINEERING
 	circuit = /obj/item/circuitboard/machine/techfab/department/science
 	stripe_color = "#D381C9"
 	payment_department = ACCOUNT_SCI

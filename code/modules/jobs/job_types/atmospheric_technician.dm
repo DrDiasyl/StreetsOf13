@@ -1,11 +1,11 @@
 /datum/job/atmospheric_technician
 	title = JOB_FIREFIGHTER
 	description = "Ensure the air is breathable on the station, fill oxygen tanks, fight fires, purify the air."
-	department_head = list(JOB_FOREMAN)
+	department_head = list(JOB_CIVIL_MANAGER)
 	faction = FACTION_STATION
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = SUPERVISOR_FOREMAN
+	supervisors = SUPERVISOR_CM
 	exp_requirements = 60
 	exp_required_type = EXP_TYPE_CREW
 	exp_granted_type = EXP_TYPE_CREW

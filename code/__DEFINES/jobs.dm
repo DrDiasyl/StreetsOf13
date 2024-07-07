@@ -26,6 +26,23 @@
 #define JOB_CONFIG_SPAWN_POSITIONS "Spawn Positions"
 #define JOB_CONFIG_TOTAL_POSITIONS "Total Positions"
 
+//DEPRICATED JOBS
+//#define JOB_RESEARCH_DIRECTOR "Research Director"
+//#define JOB_BRIDGE_ASSISTANT "Bridge Assistant"
+//#define JOB_VETERAN_ADVISOR "Veteran Security Advisor"
+//#define JOB_HUMAN_AI "Big Brother"
+//#define JOB_POLICE_OFFICER_MEDICAL "Security Officer (Medical)"
+//#define JOB_POLICE_OFFICER_ENGINEERING "Security Officer (Engineering)"
+//#define JOB_POLICE_OFFICER_SCIENCE "Security Officer (Science)"
+//#define JOB_POLICE_OFFICER_SUPPLY "Security Officer (Cargo)"
+//#define JOB_SCIENTIST "Scientist"
+//#define JOB_ROBOTICIST "Roboticist"
+//#define JOB_GENETICIST "Geneticist"
+//#define JOB_CARGO_GORILLA "Cargo Gorilla"
+//#define JOB_SHAFT_MINER "Shaft Miner"
+//#define JOB_BITRUNNER "Bitrunner"
+//#define JOB_CLOWN "Clown" There is only mimes, this is truly a dystopia
+
 /**
  * =======================
  * WARNING WARNING WARNING
@@ -41,55 +58,44 @@
 //No department
 #define JOB_UNEMPLOYED "Unemployed"
 #define JOB_PRISONER "Prisoner"
+#define JOB_HOMELESS "Homeless"
 //Command
 #define JOB_MAYOR "Mayor"
+#define JOB_SECRETARY "Secretary"
+#define JOB_BODYGUARD "Bodyguard"
 #define JOB_CHIEF_OF_INTERNAL_AFFAIRS "Chief of Internal Affairs"
 #define JOB_CHIEF_OF_POLICE "Chief of Police"
-//#define JOB_RESEARCH_DIRECTOR "Research Director"
 #define JOB_CHIEF_MEDICAL_OFFICER "Chief Medical Officer"
-//#define JOB_BRIDGE_ASSISTANT "Bridge Assistant"
-//#define JOB_VETERAN_ADVISOR "Veteran Security Advisor"
 //Silicon
 #define JOB_AI "AI"
 #define JOB_CYBORG "Cyborg"
 #define JOB_PERSONAL_AI "Personal AI"
-//#define JOB_HUMAN_AI "Big Brother"
 //Security
 #define JOB_WARDEN "Warden"
 #define JOB_DETECTIVE "Detective"
 #define JOB_POLICE_OFFICER "Police Officer"
-//#define JOB_POLICE_OFFICER_MEDICAL "Security Officer (Medical)"
-//#define JOB_POLICE_OFFICER_ENGINEERING "Security Officer (Engineering)"
-//#define JOB_POLICE_OFFICER_SCIENCE "Security Officer (Science)"
-//#define JOB_POLICE_OFFICER_SUPPLY "Security Officer (Cargo)"
 //Engineering
-#define JOB_FOREMAN "Foreman" //demoted from command
-#define JOB_CONSTRUCTION_WORKER "Construction Worker"
+#define JOB_CIVIL_MANAGER "Civil Manager" // CE demoted from command
+#define JOB_CIVIL_ENGINEER "Civil Engineer"
+#define JOB_FIRE_CAPTAIN "Fire Captain"
 #define JOB_FIREFIGHTER "Firefighter"
 //Medical
 #define JOB_CORONER "Coroner"
 #define JOB_MEDICAL_DOCTOR "Medical Doctor"
 #define JOB_PARAMEDIC "Paramedic"
-#define JOB_CHEMIST "Chemist"
-//Science, all of it is nuked
-//#define JOB_SCIENTIST "Scientist"
-//#define JOB_ROBOTICIST "Roboticist"
-//#define JOB_GENETICIST "Geneticist"
+#define JOB_PHARMACIST "Pharmacist"
 //Supply
-#define JOB_LOGISTIC_MANAGER "Logistic Manager"
+#define JOB_HEAD_BANKER "Logistic Manager"
 #define JOB_LOGISTIC_TECHNICIAN "Logistic Technician"
-//#define JOB_CARGO_GORILLA "Cargo Gorilla"
-//#define JOB_SHAFT_MINER "Shaft Miner"
-//#define JOB_BITRUNNER "Bitrunner"
 //Service
 #define JOB_BARTENDER "Bartender"
 #define JOB_FARMER "Farmer"
 #define JOB_COOK "Cook"
 #define JOB_CHEF "Chef" // Alternate cook title.
 #define JOB_STREET_CLEANER "Street Cleaner"
-//#define JOB_CLOWN "Clown" There is only mimes, this is truly a dystopia
 #define JOB_MIME "Mime"
 #define JOB_CURATOR "Curator"
+#define JOB_JOURNALIST "Journalist" // Alternate curator title.
 #define JOB_LAWYER "Lawyer"
 #define JOB_PRIEST "Priest"
 #define JOB_PSYCHOLOGIST "Psychologist"
@@ -117,7 +123,7 @@
 #define JOB_CENTCOM_PRIVATE_SECURITY "Private Security Force"
 
 #define JOB_GROUP_ENGINEERS list( \
-	JOB_CONSTRUCTION_WORKER, \
+	JOB_CIVIL_ENGINEER, \
 	JOB_FIREFIGHTER, \
 )
 
@@ -164,8 +170,6 @@
 #define DEPARTMENT_CARGO "Cargo"
 #define DEPARTMENT_BITFLAG_ENGINEERING (1<<4)
 #define DEPARTMENT_ENGINEERING "Engineering"
-#define DEPARTMENT_BITFLAG_SCIENCE (1<<5)
-#define DEPARTMENT_SCIENCE "Science"
 #define DEPARTMENT_BITFLAG_MEDICAL (1<<6)
 #define DEPARTMENT_MEDICAL "Medical"
 #define DEPARTMENT_BITFLAG_SILICON (1<<7)
@@ -181,7 +185,6 @@ DEFINE_BITFIELD(departments_bitflags, list(
 	"SERVICE" = DEPARTMENT_BITFLAG_SERVICE,
 	"CARGO" = DEPARTMENT_BITFLAG_CARGO,
 	"ENGINEERING" = DEPARTMENT_BITFLAG_ENGINEERING,
-	"SCIENCE" = DEPARTMENT_BITFLAG_SCIENCE,
 	"MEDICAL" = DEPARTMENT_BITFLAG_MEDICAL,
 	"SILICON" = DEPARTMENT_BITFLAG_SILICON,
 	"ASSISTANT" = DEPARTMENT_BITFLAG_ASSISTANT,
@@ -244,12 +247,12 @@ DEFINE_BITFIELD(job_flags, list(
 
 // Variable macros used to declare who is the supervisor for a given job, announced to the player when they join as any given job.
 #define SUPERVISOR_MAYOR "the Mayor"
-#define SUPERVISOR_FOREMAN "the Foreman"
+#define SUPERVISOR_CM "the Civil Manager"
+#define SUPERVISOR_FC "the Fire Captain"
 #define SUPERVISOR_CMO "the Chief Medical Officer"
 #define SUPERVISOR_COIA "the Chief of Internal Affairs"
 #define SUPERVISOR_COP "the Chief of Police"
 #define SUPERVISOR_LM "the Logistics Manager"
-#define SUPERVISOR_RD "the Research Director" //to be nuked
 
 /// Mind traits that should be shared by every head of staff. has to be this way cause byond lists lol
 #define HEAD_OF_STAFF_MIND_TRAITS TRAIT_FAST_TYING, TRAIT_HIGH_VALUE_RANSOM

@@ -34,7 +34,7 @@
 
 /obj/machinery/rnd/production/protolathe/department/science
 	name = "department protolathe (Science)"
-	allowed_department_flags = DEPARTMENT_BITFLAG_SCIENCE
+	allowed_department_flags = DEPARTMENT_BITFLAG_ENGINEERING
 	circuit = /obj/item/circuitboard/machine/protolathe/department/science
 	stripe_color = "#D381C9"
 	payment_department = ACCOUNT_SCI

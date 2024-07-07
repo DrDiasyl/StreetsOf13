@@ -13,7 +13,7 @@
 	category = list(
 		RND_CATEGORY_AI + RND_SUBCATEGORY_AI_MISC
 	)
-	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING
 
 /datum/design/paicard
 	name = "Personal Artificial Intelligence Card"
@@ -25,7 +25,7 @@
 	category = list(
 		RND_CATEGORY_AI + RND_SUBCATEGORY_AI_MISC
 	)
-	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_SERVICE
+	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING | DEPARTMENT_BITFLAG_SERVICE
 
 /datum/design/ai_cam_upgrade
 	name = "AI Surveillance Software Update"
@@ -37,7 +37,7 @@
 	category = list(
 		RND_CATEGORY_AI + RND_SUBCATEGORY_AI_UPGRADES
 	)
-	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING
 
 ////////////////////////////////////////
 //////////Disk Construction Disks///////
@@ -52,4 +52,4 @@
 	category = list(
 		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_SCIENCE
 	)
-	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE
+	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING

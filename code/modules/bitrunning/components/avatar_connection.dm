@@ -60,7 +60,6 @@
 		var/datum/action/avatar_domain_info/action = new(help_datum)
 		action.Grant(avatar)
 
-	var/client/our_client = old_body.client
 	var/alias = pick(GLOB.hacker_aliases)
 
 	if(alias && avatar.real_name != alias)

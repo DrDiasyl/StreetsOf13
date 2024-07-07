@@ -153,12 +153,6 @@
 	department_to_apply_to = DEPARTMENT_BITFLAG_COMMAND
 	department_name = "Command"
 
-/datum/station_trait/deathrattle_department/science
-	name = "Deathrattled Science"
-	weight = 1
-	department_to_apply_to = DEPARTMENT_BITFLAG_SCIENCE
-	department_name = "Science"
-
 /datum/station_trait/deathrattle_department/security
 	name = "Deathrattled Security"
 	weight = 1

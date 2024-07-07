@@ -1,12 +1,12 @@
 /datum/job/station_engineer
-	title = JOB_CONSTRUCTION_WORKER
+	title = JOB_CIVIL_ENGINEER
 	description = "Start the Supermatter, wire the solars, repair station hull \
 		and wiring damage."
-	department_head = list(JOB_FOREMAN)
+	department_head = list(JOB_CIVIL_MANAGER)
 	faction = FACTION_STATION
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = SUPERVISOR_FOREMAN
+	supervisors = SUPERVISOR_CM
 	exp_requirements = 60
 	exp_required_type = EXP_TYPE_CREW
 	exp_granted_type = EXP_TYPE_CREW

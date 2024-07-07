@@ -51,13 +51,13 @@
 		JOB_DETECTIVE = "Det.",
 		JOB_POLICE_OFFICER = "Officer",
 
-		JOB_FOREMAN = "Chief Engineer",
-		JOB_CONSTRUCTION_WORKER = "Engineer",
+		JOB_CIVIL_MANAGER = "Chief Engineer",
+		JOB_CIVIL_ENGINEER = "Engineer",
 		JOB_FIREFIGHTER = "Technician",
 
 		JOB_CHIEF_MEDICAL_OFFICER = "C.M.O.",
 		JOB_MEDICAL_DOCTOR = "M.D.",
-		JOB_CHEMIST = "Pharm.D.",
+		JOB_PHARMACIST = "Pharm.D.",
 	)
 	///which job titles should be placed after the name?
 	var/static/list/suffix_job_titles = list()

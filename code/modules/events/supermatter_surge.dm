@@ -40,7 +40,7 @@
 /datum/round_event_control/supermatter_surge/can_spawn_event(players_amt, allow_magic = FALSE)
 	. = ..()
 
-	if(!SSjob.has_minimum_jobs(crew_threshold = 3, jobs = JOB_GROUP_ENGINEERS, head_jobs = list(JOB_FOREMAN)))
+	if(!SSjob.has_minimum_jobs(crew_threshold = 3, jobs = JOB_GROUP_ENGINEERS, head_jobs = list(JOB_CIVIL_MANAGER)))
 		return FALSE
 
 /datum/round_event/supermatter_surge

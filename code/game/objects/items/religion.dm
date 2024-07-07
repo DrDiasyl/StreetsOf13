@@ -150,7 +150,7 @@
 
 /obj/item/banner/science/Initialize(mapload)
 	. = ..()
-	job_loyalties = DEPARTMENT_BITFLAG_SCIENCE
+	job_loyalties = DEPARTMENT_BITFLAG_ENGINEERING
 
 /obj/item/banner/science/mundane
 	inspiration_available = FALSE

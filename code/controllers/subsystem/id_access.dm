@@ -178,13 +178,13 @@ SUBSYSTEM_DEF(id_access)
 		),
 		"[ACCESS_CE]" = list(
 			"regions" = list(REGION_ENGINEERING),
-			"head" = JOB_FOREMAN,
+			"head" = JOB_CIVIL_MANAGER,
 			"templates" = list(),
 			"pdas" = list(),
 		),
 		"[ACCESS_QM]" = list(
 			"regions" = list(REGION_SUPPLY),
-			"head" = JOB_LOGISTIC_MANAGER,
+			"head" = JOB_HEAD_BANKER,
 			"templates" = list(),
 			"pdas" = list(),
 		),
