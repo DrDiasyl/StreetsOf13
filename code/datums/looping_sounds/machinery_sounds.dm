@@ -166,3 +166,14 @@
 	end_volume = 60
 	extra_range = MEDIUM_RANGE_SOUND_EXTRARANGE
 	falloff_exponent = 4
+
+/datum/looping_sound/train
+	start_sound = 'sound/vehicles/train_start.ogg'
+	start_length = 5.449 SECONDS
+	start_volume = 20
+	mid_sounds = list('sound/vehicles/train_mid.ogg' = 1)
+	mid_length = 4.87 SECONDS
+	end_sound = 'sound/vehicles/train_stop.ogg'
+	end_volume = 20
+	volume = 20
+	extra_range = 2
