@@ -47,7 +47,6 @@
 	if(isliving(arrived))
 		var/mob/living/arrived_living = arrived
 		arrived_living.add_body_temperature_change("water", -6)
-		to_chat(arrived_living, span_danger("Each step makes you wetter and colder!"))
 	. = ..()
 
 /turf/open/water/beach
