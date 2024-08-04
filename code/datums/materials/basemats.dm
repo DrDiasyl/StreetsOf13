@@ -620,3 +620,21 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	victim.apply_damage(30, BURN, BODY_ZONE_HEAD, wound_bonus = 5)
 	source_item?.reagents?.add_reagent(/datum/reagent/toxin/plasma, source_item.reagents.total_volume*5)
 	return TRUE
+
+///CONCRETE used by most of the city blocks
+/datum/material/concrete
+	name = "concrete"
+	desc = "Mix of cement and water, creating a strong and cheap material for city building."
+	color = "#79858b"
+	greyscale_colors = "#79858b"
+	categories = list(MAT_CATEGORY_SILO = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE, MAT_CATEGORY_ITEM_MATERIAL=TRUE)
+	sheet_type = /obj/item/stack/sheet/concrete
+	value_per_unit = 5 / SHEET_MATERIAL_AMOUNT
+	mat_rust_resistance = RUST_RESISTANCE_ABSOLUTE
+	minimum_value_override = 0
+	tradable = TRUE
+	tradable_base_quantity = MATERIAL_QUANTITY_COMMON
+
+/datum/material/concrete/on_accidental_mat_consumption(mob/living/carbon/victim, obj/item/source_item)
+	victim.apply_damage(15, TOX, BODY_ZONE_CHEST, wound_bonus = 0)
+	return TRUE

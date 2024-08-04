@@ -948,3 +948,47 @@ new /datum/stack_recipe("paper frame door", /obj/structure/mineral_door/paperfra
 	amount = 20
 /obj/item/stack/sheet/hauntium/five
 	amount = 5
+
+/*
+* BRICKS AND CONCRETE
+*/
+
+/obj/item/stack/sheet/bricks
+	name = "bricks"
+	desc = "Bread of the city construction."
+	singular_name = "brick"
+	icon_state = "sheet-sandstone"
+	mats_per_unit = list(/datum/material/concrete = SHEET_MATERIAL_AMOUNT)
+	merge_type = /obj/item/stack/sheet/bricks
+	material_type = /datum/material/concrete
+	material_modifier = 1
+	color = COLOR_RED_GRAY
+	throwforce = 13 //GET BRICKED
+	force = 10
+
+/obj/item/stack/sheet/bricks/fifty
+	amount = 50
+/obj/item/stack/sheet/bricks/twenty
+	amount = 20
+/obj/item/stack/sheet/bricks/five
+	amount = 5
+
+/obj/item/stack/sheet/concrete
+	name = "concrete blocks"
+	desc = "Butter of the city construction."
+	singular_name = "concrete"
+	icon_state = "sheet-sandstone"
+	mats_per_unit = list(/datum/material/concrete = SHEET_MATERIAL_AMOUNT)
+	merge_type = /obj/item/stack/sheet/concrete
+	material_type = /datum/material/concrete
+	material_modifier = 1
+	color = COLOR_GRAY
+	throwforce = 13
+	force = 10
+
+/obj/item/stack/sheet/concrete/fifty
+	amount = 50
+/obj/item/stack/sheet/concrete/twenty
+	amount = 20
+/obj/item/stack/sheet/concrete/five
+	amount = 5

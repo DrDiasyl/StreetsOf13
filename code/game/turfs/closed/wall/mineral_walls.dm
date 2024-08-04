@@ -382,3 +382,39 @@
 /turf/closed/wall/mineral/plastitanium/copyTurf(turf/T)
 	. = ..()
 	T.transform = transform
+
+/*
+* BRICK AND CONCRETE WALLS
+*
+* Main walls you find at the city
+*/
+
+/turf/closed/wall/mineral/bricks
+	name = "brick wall"
+	desc = "A wall made out of bricks."
+	icon = 'icons/turf/walls/bricks-wall.dmi'
+	icon_state = "brick-wall-0"
+	base_icon_state = "brick-wall"
+	sheet_type = /obj/item/stack/sheet/bricks
+	hardness = 60
+	sheet_amount = 5
+	smoothing_flags = SMOOTH_BITMASK
+	smoothing_groups = SMOOTH_GROUP_BRICK_WALLS + SMOOTH_GROUP_WALLS + SMOOTH_GROUP_CLOSED_TURFS
+	canSmoothWith = SMOOTH_GROUP_BRICK_WALLS
+	custom_materials = list(/datum/material/concrete = SHEET_MATERIAL_AMOUNT * 1.5)
+	rust_resistance = RUST_RESISTANCE_ABSOLUTE
+
+/turf/closed/wall/mineral/concrete
+	name = "concrete wall"
+	desc = "A wall made out of concrete."
+	icon = 'icons/turf/walls/concrete-wall.dmi'
+	icon_state = "concrete-wall-0"
+	base_icon_state = "concrete-wall"
+	sheet_type = /obj/item/stack/sheet/concrete
+	hardness = 70
+	sheet_amount = 7
+	smoothing_flags = SMOOTH_BITMASK
+	smoothing_groups = SMOOTH_GROUP_CONCRETE_WALLS + SMOOTH_GROUP_WALLS + SMOOTH_GROUP_CLOSED_TURFS
+	canSmoothWith = SMOOTH_GROUP_CONCRETE_WALLS
+	custom_materials = list(/datum/material/concrete = SHEET_MATERIAL_AMOUNT * 2.5)
+	rust_resistance = RUST_RESISTANCE_ABSOLUTE

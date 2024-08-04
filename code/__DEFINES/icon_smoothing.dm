@@ -159,6 +159,8 @@ DEFINE_BITFIELD(smoothing_junction, list(
 #define SMOOTH_GROUP_HIERO_WALL S_OBJ(16) ///obj/effect/temp_visual/elite_tumor_wall, /obj/effect/temp_visual/hierophant/wall
 #define SMOOTH_GROUP_BAMBOO_WALLS S_TURF(17) //![/turf/closed/wall/mineral/bamboo, /obj/structure/falsewall/bamboo]
 #define SMOOTH_GROUP_PLASTINUM_WALLS S_TURF(18) //![turf/closed/indestructible/riveted/plastinum]
+#define SMOOTH_GROUP_BRICK_WALLS S_OBJ(19) ///turf/closed/wall/mineral/bricks, /obj/structure/falsewall/bricks
+#define SMOOTH_GROUP_CONCRETE_WALLS S_OBJ(20) ///turf/closed/wall/mineral/concrete, /obj/structure/falsewall/concrete
 
 #define SMOOTH_GROUP_PAPERFRAME S_OBJ(21) ///obj/structure/window/paperframe, /obj/structure/mineral_door/paperframe
 
