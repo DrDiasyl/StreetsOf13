@@ -28,3 +28,4 @@ Unless otherwise noted all images were created by Cuban Pete on July 26, 2555. T
 
 ---END EXAMPLES (NOT PART OF ANY LICENSE)---
 
+unrest.gif was created using various Creative Commons and Public Domain images (https://commons.wikimedia.org/wiki/File:Riot_police_blocking_the_way_to_the_Rada_building.jpg, https://commons.wikimedia.org/wiki/File:Euromaidan_Kiev_2014-02-18_15-08.JPG, https://commons.wikimedia.org/wiki/File:Euromaidan_in_Lviv_058.jpg, https://commons.wikimedia.org/wiki/File:2016_Mong_Kok_civil_unrest_fire_Barrier.jpg)

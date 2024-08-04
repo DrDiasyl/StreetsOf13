@@ -32,3 +32,7 @@ Unless otherwise noted all sounds were created by Cuban Pete on July 26, 2555. T
 
 
 ---ADD LICENSING INFORMATION BELOW---
+
+unrest_at_mars.ogg was created by BlueTuxedo on Feburary 23, 2022. It is licensed under a Creative Commons license (https://www.newgrounds.com/audio/listen/1113474)
+
+blackhawk_of_space.ogg was created by BlueTuxedo on August 6, 2022. It is licensed under a Creative Commons license (https://www.newgrounds.com/audio/listen/1150011)
