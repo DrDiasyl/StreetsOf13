@@ -95,6 +95,10 @@
 	base_icon_state = "tram_plate"
 	flags_1 = NONE
 
+/turf/open/floor/tram/plate/cross
+	icon_state = "tram_plate_cross"
+	base_icon_state = "tram_plate_cross"
+
 /turf/open/floor/tram/plate/broken_states()
 	return list("tram_plate-damaged1","tram_plate-damaged2")
 
@@ -163,6 +167,10 @@
 	base_icon_state = "tram_plate"
 	flags_1 = NONE
 
+/turf/open/indestructible/tram/plate/cross
+	icon_state = "tram_plate_cross"
+	base_icon_state = "tram_plate_cross"
+
 /turf/open/floor/glass/reinforced/tram/Initialize(mapload)
 	. = ..()
 	RemoveElement(/datum/element/atmos_sensitive, mapload)
@@ -202,6 +210,10 @@
 	icon_state = "tram_light"
 	base_icon_state = "tram_light"
 	floor_tile = /obj/item/stack/thermoplastic/light
+
+/obj/structure/thermoplastic/cargo
+	icon_state = "tram_dark_cargo"
+	base_icon_state = "tram_dark_cargo"
 
 /obj/structure/thermoplastic/examine(mob/user)
 	. = ..()

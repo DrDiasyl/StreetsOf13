@@ -1,4 +1,5 @@
 /turf/open/water
+	name = "shallow water"
 	gender = PLURAL
 	desc = "Shallow water."
 	icon = 'icons/turf/floors.dmi'
@@ -32,7 +33,25 @@
 
 /turf/open/water/jungle
 
+/turf/open/water/freezing
+	name = "freezing shallow water"
+	gender = PLURAL
+	desc = "Shallow water, looks extremely cold for a dunk in."
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "riverwater_freezing_motion"
+	baseturfs = /turf/open/misc/asteroid/snow/standard_air
+	planetary_atmos = FALSE
+	immerse_overlay_color = "#165A72"
+
+/turf/open/water/freezing/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	if(isliving(arrived))
+		var/mob/living/arrived_living = arrived
+		arrived_living.add_body_temperature_change("water", -6)
+		to_chat(arrived_living, span_danger("Each step makes you wetter and colder!"))
+	. = ..()
+
 /turf/open/water/beach
+	name = "beach shallow water"
 	planetary_atmos = FALSE
 	gender = PLURAL
 	desc = "Come on in, it's great!"
