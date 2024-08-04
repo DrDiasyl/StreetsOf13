@@ -9,7 +9,7 @@ DAMAGE_MULTIPLIER 1
 REVIVAL_POD_PLANTS
 
 ## amount of time (in hundredths of seconds) for which a brain retains the "spark of life" after the person's death (set to -1 for infinite)
-REVIVAL_BRAIN_LIFE -1
+REVIVAL_BRAIN_LIFE 3000
 
 ## OOC DURING ROUND ###
 ## Comment this out if you want OOC to be automatically disabled during the round, it will be enabled during the lobby and after the round end results.
@@ -351,7 +351,7 @@ ROUNDSTART_RACES human
 ## Races that are strictly worse than humans that could probably be turned on without balance concerns
 ROUNDSTART_RACES felinid
 ROUNDSTART_RACES lizard
-#ROUNDSTART_RACES fly
+ROUNDSTART_RACES fly
 ROUNDSTART_RACES moth
 ROUNDSTART_RACES plasmaman
 #ROUNDSTART_RACES shadow
@@ -436,13 +436,13 @@ BOMBCAP 20
 ## a less lootfilled or smaller or less round effecting ruin costs less to
 ## spawn, while the converse is true. Alter this number to affect the amount
 ## of ruins.
-LAVALAND_BUDGET 60
+LAVALAND_BUDGET 0
 
 ## Ice Moon Budget
-ICEMOON_BUDGET 90
+ICEMOON_BUDGET 0
 
 ## Space Ruin Budget
-Space_Budget 16
+Space_Budget 0
 
 ## Time in ds from when a player latejoins till the arrival shuttle docks at the station
 ## Must be at least 30. At least 55 recommended to be visually/aurally appropriate
